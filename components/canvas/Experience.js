@@ -33,9 +33,10 @@ const Experience = () => {
                             </>
                         ) : ( */}
                             <>
-                                <fog attach="fog" args={['#416B64', 0.1, 10]} />
-                                <fog attach="fog" args={['#416B64', 13, 3]} />
-                                <group position={[2.9, 0.6, 0.5]} rotation={[-19.1, 24.3, -0.35]}>
+                                {/* <fog attach="fog" args={['#416B64', 0.1, 10]} />
+                                <fog attach="fog" args={['#416B64', 13, 3]} /> */}
+                                {/* <group position={[2.9, 0.6, 0.5]} rotation={[-19.1, 24.3, -0.35]}> */}
+                                <group position={[2, 0, 0]} rotation={[0, 0, 0]} scale={0.0075}>
                                     <Spline />
                                 </group>
                             </>

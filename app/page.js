@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <>
       {/* INTRO */}
-      <section className='relative min-h-screen w-full bg-bg-color-0'>
+      <section className='relative min-h-screen w-full bg-bg-color-0 '>
         <div className='container'>
           <div className='grid grid-cols-16 min-h-[100vh] gap-3'>
             <div className='col-span-10 flex flex-col h-full justify-center'>
@@ -30,9 +30,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <div className='absolute h-screen w-screen top-0 left-0 z-0'> */}
-        {/* <Experience /> */}
-        {/* </div> */}
+        <div className='absolute h-[180vh] w-screen top-0 left-0 z-10'>
+          <Experience />
+        </div>
       </section>
 
       <section className='bg-bg-color-0 pb-24'>
