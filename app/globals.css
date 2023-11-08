@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: PP Monument Extended;
+    font-weight: 400;
+    src: url(../public/assets/fonts/PPMonument/PPMonumentExtended-Regular.otf) format("opentype");
+    font-style: normal;
+    line-height: normal;
+  }
+
+  @font-face {
+    font-family: Neue Plak Normal;
+    font-weight: 400;
+    src: url(../public/assets/fonts/NeuePlak/Neue\ Plak\ Extended\ Regular.ttf) format("truetype");
+    font-style: normal;
+    line-height: normal;
+  }
+
+  @font-face {
+    font-family: Neue Plak Semibold;
+    font-weight: 400;
+    src: url(../public/assets/fonts/NeuePlak/Neue\ Plak\ Extended\ SemiBold.ttf) format("truetype");
+    font-style: normal;
+    line-height: normal;
+  }
+}
+
+.btn-black {
+  @apply bg-text-primary text-white transition-all ease-out duration-200 leading-[100%];
+}
+
+.btn-gray {
+  @apply bg-gray-light text-text-primary transition-all ease-out duration-200 leading-[100%];
+}
+
+.btn-white {
+  @apply bg-white text-text-primary transition-all ease-out duration-200 leading-[100%];
+}
+
+.content-primary{
+  @apply font-monument text-text-primary not-italic	leading-[normal]
+}
+
+.content-secondary{
+  @apply font-neue text-text-secondary not-italic	leading-[normal]
+}
+
+.content-subtitle{
+  @apply font-monument text-text-extra-0 not-italic	leading-[normal]
+}

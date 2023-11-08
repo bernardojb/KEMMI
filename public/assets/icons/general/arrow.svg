@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <title>arrow</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_2-2" data-name="Layer 2">
+      <rect class="cls-1" width="16" height="16"/>
+    </g>
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="Grupo_12" data-name="Grupo 12">
+        <path id="Caminho_27" data-name="Caminho 27" class="cls-2" d="M3.3728,8h8.7168"/>
+        <path id="Caminho_28" data-name="Caminho 28" class="cls-2" d="M9.114,11.513,12.6272,8,9.114,4.487"/>
+      </g>
+    </g>
+  </g>
+</svg>

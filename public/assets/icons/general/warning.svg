@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #959595;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>warning</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_2-2" data-name="Layer 2">
+      <rect class="cls-1" width="16" height="16"/>
+    </g>
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="Grupo_561" data-name="Grupo 561">
+        <circle id="Elipse_3" data-name="Elipse 3" class="cls-2" cx="8" cy="8" r="7.63333"/>
+        <g id="Grupo_164" data-name="Grupo 164">
+          <line id="Linha_9" data-name="Linha 9" class="cls-3" x1="7.99068" y1="4.18333" x2="7.99068" y2="8"/>
+          <line id="Linha_10" data-name="Linha 10" class="cls-3" x1="7.99068" y1="11.81667" x2="8.00022" y2="11.81667"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
