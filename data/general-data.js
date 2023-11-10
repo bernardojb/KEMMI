@@ -6,8 +6,8 @@ const generalData =
     email: '?',
     phone: '?',
     whatsapp: '?',
-    adressLine: '?',
-    zipCode: '?',
+    adressLine: 'R. Viradouro, 63 - Itaim Bibi',
+    zipCode: 'São Paulo - SP, 04538-110',
     city: 'São Paulo/SP',
     country: 'Brasil',
     links: [

@@ -7,12 +7,7 @@ import Image from "next/image"
 const AccordionCard = ({ i, expanded, setImage, setExpanded, children, ...props }) => {
     const isOpen = i === expanded
     return (
-        <div className={`flex flex-row flex-nowrap ${props.padding}`}>
-            <div className="bg-text-primary py-3 px-[14px] rounded-full h-fit flex justify-center items-center mr-5 ">
-                <p className="font-monument text-white leading-[100%]">
-                    {props.number}
-                </p>
-            </div>
+        <div className={`${props.padding}`}>
             <div>
                 <motion.header
                     initial={false}
@@ -21,9 +16,14 @@ const AccordionCard = ({ i, expanded, setImage, setExpanded, children, ...props 
                         setExpanded(isOpen ? false : i)
                     }
                     }
-                    className="w-full cursor-pointer"
+                    className="w-full cursor-pointer flex flex-col lg:flex-row"
                 >
-                    <h1 className={`font-monument text-2xl hover:transition-colors hover:duration-500 duration-500 transition-colors ease-out ${isOpen ? "text-text-primary" : "text-text-secondary"}`}>{props.title}</h1>
+                    <div className={` py-3 px-[14px] rounded-full h-fit flex justify-center items-center mr-5 w-fit mb-3 lg:mb-0 transition-all ease-out duration-200 ${isOpen ? "bg-text-primary" : "bg-white"}`}>
+                        <p className={`font-monument  leading-[100%] transition-all ease-out duration-200 ${isOpen ? "text-white" : "text-text-secondary"}`}>
+                            {props.number}
+                        </p>
+                    </div>
+                    <h1 className={`font-monument text-xl lg:text-2xl hover:transition-colors hover:duration-500 duration-500 transition-colors ease-out ${isOpen ? "text-text-primary" : "text-text-secondary"}`}>{props.title}</h1>
                 </motion.header>
                 <AnimatePresence initial={false}>
                     {isOpen && (
@@ -43,7 +43,7 @@ const AccordionCard = ({ i, expanded, setImage, setExpanded, children, ...props 
                                 transition={{ duration: 0.4 }}
                                 className="content-placeholder"
                             >
-                                <p className='font-neue text-xl text-text-secondary pt-6 pb-11'>{props.text}</p>
+                                <p className='font-neue text-lg sm:text-xl text-text-secondary pt-6 pb-11 transition-all ease-out duration-200'>{props.text}</p>
                             </motion.div>
                             <div className="rounded-[28px] h-[122px] bg-placeholder"></div>
                         </motion.section>
@@ -59,21 +59,21 @@ const accordionData = [
         number: "01.",
         title: "Solicitação",
         text: "Preencha o formulário para receber uma cotação atualizada de seus medicamentos.",
-        padding:"pb-14"
+        padding: "pb-14"
     },
     {
         id: 2,
         number: "02.",
         title: "Aprovação",
         text: "Preencha o formulário para receber uma cotação atualizada de seus medicamentos.",
-        padding:"pb-14"
+        padding: "pb-14"
     },
     {
         id: 3,
         number: "03.",
         title: "Envio",
         text: "Preencha o formulário para receber uma cotação atualizada de seus medicamentos.",
-        padding:""
+        padding: ""
     },
 ]
 

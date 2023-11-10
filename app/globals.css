@@ -28,6 +28,20 @@
   }
 }
 
+button,
+textarea,
+input,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .btn-black {
   @apply bg-text-primary text-white transition-all ease-out duration-200 leading-[100%];
 }

@@ -1,19 +1,22 @@
 const headerData = [
-  // {
-  //   id: 1,
-  //   href: "/",
-  //   text: "Link 1",
-  // },
-  // {
-  //   id: 2,
-  //   href: "/",
-  //   text: "Link 2",
-  // },
-  // {
-  //   id: 3,
-  //   href: "/",
-  //   text: "Link 3",
-  // },
+  {
+    id: 1,
+    href: "/",
+    number:"00.",
+    text: "Home",
+  },
+  {
+    id: 2,
+    href: "/sobre",
+    number:"01.",
+    text: "Sobre",
+  },
+  {
+    id: 3,
+    href: "/contato",
+    number:"02.",
+    text: "Contato",
+  },
   // {
   //   id: 4,
   //   href: "/contato",
