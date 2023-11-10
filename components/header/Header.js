@@ -18,7 +18,7 @@ export default function Header() {
   //anim
   const openNav = {
     open: {
-      height: '100lvh',
+      height: '100dvh',
       backgroundColor: '#ffffff',
       transition: {
         type: 'spring',
@@ -104,7 +104,7 @@ export default function Header() {
             ))}
           </div> */}
 
-          <Link href="/contato" className='hidden sm:flex ml-auto'>
+          <Link href="/contato" className='hidden sm:flex ml-auto' onClick={()=>setToggle(false)} >
             <div className='bg-gray-light h-[38px] rounded-full flex items-center px-[22px] mr-3'>
               <p className='font-neue-semibold text-sm text-navbar-text-hover whitespace-nowrap'>Solicitar cotação</p>
             </div>
