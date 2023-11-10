@@ -75,6 +75,30 @@ const Carrousel = (props) => {
                 <SwiperSlide className="cursor-grab active:cursor-grabbing h-full">
                     <ProductCard title="Lonsurf 4mg/ml" onClick={() => setToggleModal(true)} />
                 </SwiperSlide>
+                <SwiperSlide className="cursor-grab active:cursor-grabbing h-full">
+                    <ProductCard title="Lonsurf 4mg/ml" onClick={() => setToggleModal(true)} />
+                </SwiperSlide>
+                <SwiperSlide className="cursor-grab active:cursor-grabbing h-full">
+                    <ProductCard title="Lonsurf 4mg/ml" onClick={() => setToggleModal(true)} />
+                </SwiperSlide>
+                <SwiperSlide className="cursor-grab active:cursor-grabbing h-full">
+                    <ProductCard title="Lonsurf 4mg/ml" onClick={() => setToggleModal(true)} />
+                </SwiperSlide>
+                <SwiperSlide className="cursor-grab active:cursor-grabbing h-full">
+                    <ProductCard title="Lonsurf 4mg/ml" onClick={() => setToggleModal(true)} />
+                </SwiperSlide>
+                <SwiperSlide className="cursor-grab active:cursor-grabbing h-full">
+                    <ProductCard title="Lonsurf 4mg/ml" onClick={() => setToggleModal(true)} />
+                </SwiperSlide>
+                <SwiperSlide className="cursor-grab active:cursor-grabbing h-full">
+                    <ProductCard title="Lonsurf 4mg/ml" onClick={() => setToggleModal(true)} />
+                </SwiperSlide>
+                <SwiperSlide className="cursor-grab active:cursor-grabbing h-full">
+                    <ProductCard title="Lonsurf 4mg/ml" onClick={() => setToggleModal(true)} />
+                </SwiperSlide>
+                <SwiperSlide className="cursor-grab active:cursor-grabbing h-full">
+                    <ProductCard title="Lonsurf 4mg/ml" onClick={() => setToggleModal(true)} />
+                </SwiperSlide>
             </Swiper>
             {toggleModal && (
                 <div className='fixed h-screen w-screen top-0 left-0 z-[9999] backdrop-blur-2xl flex justify-center items-center' >
