@@ -27,12 +27,16 @@ const ContactForm = () => {
                         <h1 className=' content-primary text-xl lg:text-2xl pb-6'>Solicite uma cotação.</h1>
                         <p className='content-secondary text-base sm:text-lg pb-14'>Preencha o formulário para receber uma cotação  personalizada sobre seu pedido.</p>
                         <p className='font-neue text-base sm:text-lg mb-3'>Se preferir, entre em contato por:</p>
-                        <a href='tel:+5511996978150'>
-                            <p className='font-neue underline text-base sm:text-lg mb-1 text-text-accent'>(11) 9 9697 8150</p>
-                        </a>
-                        <a href='mailto:contato@kemmifarma.com' >
-                            <p className='font-neue underline text-base sm:text-lg mb-1 text-text-accent'>contato@kemmifarma.com</p>
-                        </a>
+                        <div className='w-fit'>
+                            <a href='tel:+5511996978150' >
+                                <p className='font-neue underline text-base sm:text-lg mb-1 text-text-accent'>(11) 9 9697 8150</p>
+                            </a>
+                        </div>
+                        <div className='w-fit'>
+                            <a href='mailto:contato@kemmifarma.com' >
+                                <p className='font-neue underline text-base sm:text-lg mb-1 text-text-accent'>contato@kemmifarma.com</p>
+                            </a>
+                        </div>
                     </div>
 
                     <div className='col-span-16 lg:col-start-7 lg:col-span-full rounded-[28px] bg-white px-6 py-10 lg:px-12 lg:py-16'>

@@ -78,7 +78,9 @@ const Sobre = () => {
                                         <h1 className=' content-primary text-xl sm:text-2xl pb-6'>Departamento especializado em importação.</h1>
                                         <p className='content-secondary text-md sm:text-lg pb-5'>A Kemmi é uma empresa farmacêutica brasileira voltada ao mercado de importação de medicamentos especiais.</p>
                                         <p className='content-secondary text-md sm:text-lg pb-14'>Com mais de 20 anos de existência, nosso foco é comercializar e importar medicamentos e produtos para saúde com segurança e eficácia comprovadas, aprovados por órgãos regulatórios competentes.</p>
+                                        <div className='w-fit'>
                                         <DefaultButton href="/" text="Entrar em contato" style="btn-gray" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>

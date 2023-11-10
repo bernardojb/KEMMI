@@ -103,7 +103,7 @@ const Home = () => {
                 <p className=' text-xs sm:text-sm content-subtitle pb-6'>QUEM SOMOS</p>
                 <h1 className=' content-primary text-lg lg:text-2xl pb-6 break-words'>Somos uma empresa que ajuda você a importar medicamentos especiais.</h1>
                 <p className='content-secondary text-base lg:text-lg pb-14'>Oferecemos um atendimento ágil e cuidamos da sua saúde através da importação inteligente.</p>
-                <div className=' pb-[90px] '>
+                <div className='pb-[90px] w-fit '>
                   <DefaultButton href="/" text="Sobre a Kemmi" style="btn-black" icon="brightness-[2000%]" />
                 </div>
                 <div className='flex flex-row items-center'>
@@ -131,7 +131,9 @@ const Home = () => {
               <div className='col-span-full lg:col-span-9 mb-9 lg:mb-3'>
                 <h1 className=' content-primary text-xl lg:text-2xl pb-6'>Portal de importação de medicamentos não registrados no Brasil.</h1>
                 <p className='content-secondary text-base sm:text-lg pb-14'>Contamos com mais de 20 anos de experiência no mercado hospitalar e no segmento de alta complexidade.</p>
+                <div className='w-fit'>
                 <DefaultButton href="/" text="Nossa história" style="btn-black" icon="brightness-[2000%]" />
+                </div>
               </div>
 
               <div className='mb-3 col-span-full md:col-start-10 lg:col-span-5 lg:col-start-12 bg-placeholder rounded-[28px] p-8 flex justify-center items-center flex-col h-[343px]'>
