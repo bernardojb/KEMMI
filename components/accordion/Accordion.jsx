@@ -19,7 +19,7 @@ const AccordionCard = ({ i, expanded, setImage, setExpanded, children, ...props 
                     className="w-full cursor-pointer flex flex-col lg:flex-row"
                 >
                     <div className={` py-3 px-[14px] rounded-full h-fit flex justify-center items-center mr-5 w-fit mb-3 lg:mb-0 transition-all ease-out duration-200 ${isOpen ? "bg-text-primary" : "bg-white"}`}>
-                        <p className={`font-monument  leading-[100%] transition-all ease-out duration-200 ${isOpen ? "text-white" : "text-text-secondary"}`}>
+                        <p className={`font-monument leading-[100%] transition-all ease-out duration-200 ${isOpen ? "text-white" : "text-text-secondary"} pt-[4px]`}>
                             {props.number}
                         </p>
                     </div>
@@ -65,14 +65,14 @@ const accordionData = [
         id: 2,
         number: "02.",
         title: "Aprovação",
-        text: "Preencha o formulário para receber uma cotação atualizada de seus medicamentos.",
+        text: "Entraremos em contato com você após a aprovação do orçamento para organizar as informações para entrega do medicamento.",
         padding: "pb-14"
     },
     {
         id: 3,
         number: "03.",
         title: "Envio",
-        text: "Preencha o formulário para receber uma cotação atualizada de seus medicamentos.",
+        text: "Finalização do processo de importação e envio dos medicamentos. Entraremos em contato para te manter atualizado sobre o status de seu pedido.",
         padding: ""
     },
 ]

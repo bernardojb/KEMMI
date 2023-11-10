@@ -44,7 +44,7 @@ const Carrousel = (props) => {
                         slidesPerView: 4,
                     },
                 }}
-                className="card-slider-4-columns !py-5 !overflow-visible"
+                className="card-slider-4-columns !py-5 !pb-12 !overflow-visible"
             >
                 {/* {investmentsData.map((item) => (
                     <SwiperSlide className="cursor-grab active:cursor-grabbing" key={item.id}>

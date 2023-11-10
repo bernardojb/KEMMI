@@ -122,7 +122,7 @@ const ContactForm = () => {
                             <DefaultButton href="" text="Anexar receita" style="btn-gray" />
                         </div>
 
-                        <div className='flex flex-col lg:flex-row lg:items-center mb-16'>
+                        <div className='flex flex-col lg:flex-row lg:items-center'>
                             <div className='max-w-[480px] lg:mr-7 mb-6 lg:mb-0'>
                                 <p className='content-secondary max-w-[480px] w-full'>Ao enviar este formulário, você concorda com a nossa <Link href="/politica-de-privacidade" className='underline text-text-accent'>Política de Privacidade</Link>.</p>
                             </div>

@@ -26,10 +26,10 @@ const Sobre = () => {
                         </div>
                         <div className='col-span-full lg:col-span-8'>
                             <div className="grid grid-cols-8 gap-3">
-                                <div className='min-h-[133px] w-full rounded-[28px] bg-gradient-radial col-span-full sm:col-span-6 sm:col-start-3 p-5'>
+                                <div className='min-h-[133px] w-full rounded-[28px] bg-gradient-radial col-span-full sm:col-span-6 sm:col-start-3 p-3'>
                                     <div className='flex flex-row items-center justify-center h-full w-full'>
-                                        <Image src="/assets/images/anvisa.svg" width={39} height={34} alt="" className='mr-3' />
-                                        <p className='max-w-[350px] content-secondary text-md sm:text-lg'>Seguimos todas regulamentações e exigências da ANVISA.</p>
+                                        <Image src="/assets/images/anvisa.svg" width={60} height={60} alt="" className='mr-3' />
+                                        <p className='max-w-[350px] content-secondary text-base'>Seguimos todas regulamentações e exigências da ANVISA.</p>
                                     </div>
                                 </div>
                                 <div className='h-[373px] w-full rounded-[28px] bg-gradient-radial col-span-5'></div>
@@ -47,14 +47,14 @@ const Sobre = () => {
                             <h1 className='content-primary text-md sm:text-lg pb-3'>Importação global</h1>
                             <p className='content-secondary text-md sm:text-lg max-w-[537px] pb-8'>Ecossistema completo para adquirir medicamentos especiais com agilidade e segurança do EUA, Europa ou qualquer local do mundo.</p>
                             <div className='absolute right-8 bottom-8'>
-                                <ChevronPill href="/" />
+                                <ChevronPill href="/sobre#quem-somos" />
                             </div>
                         </div>
                         <div className='col-span-full lg:col-span-8 h-[340px] bg-gradient-radial rounded-[28px] p-8 relative'>
                             <h1 className='content-primary text-md sm:text-lg pb-3'>Regulamentação</h1>
                             <p className='content-secondary text-md sm:text-lg max-w-[537px] pb-8'>Seguimos com todas as regulamentações e exigências impostas pela Anvisa e legislação vigente (RDC 488/2021)</p>
                             <div className='absolute right-8 bottom-8'>
-                                <ChevronPill href="/" />
+                                <ChevronPill href="/sobre#regulamentacao" />
                             </div>
                         </div>
                         <div className='lg:col-start-3 col-span-full'>
@@ -71,21 +71,27 @@ const Sobre = () => {
                     <div className='grid grid-cols-16'>
                         <div className='col-span-16 sm:col-start-2'>
 
-                            <div className='container pb-32 pt-40'>
-                                <div className='grid grid-cols-16'>
+                            <div className='container  pt-40' id="quem-somos">
+                                <div className='grid grid-cols-16 pb-20 '>
                                     <div className='col-span-full lg:col-span-9'>
                                         <p className=' text-xs sm:text-sm content-subtitle pb-6'>QUEM SOMOS</p>
                                         <h1 className=' content-primary text-xl sm:text-2xl pb-6'>Departamento especializado em importação.</h1>
                                         <p className='content-secondary text-md sm:text-lg pb-5'>A Kemmi é uma empresa farmacêutica brasileira voltada ao mercado de importação de medicamentos especiais.</p>
                                         <p className='content-secondary text-md sm:text-lg pb-14'>Com mais de 20 anos de existência, nosso foco é comercializar e importar medicamentos e produtos para saúde com segurança e eficácia comprovadas, aprovados por órgãos regulatórios competentes.</p>
                                         <div className='w-fit'>
-                                        <DefaultButton href="/" text="Entrar em contato" style="btn-gray" />
+                                            <DefaultButton href="/contato" text="Entrar em contato" style="btn-gray" />
                                         </div>
                                     </div>
                                 </div>
+                                <div className='flex flex-col lg:flex-row items-end lg:justify-end lg:items-center'>
+                                    {/* <div className='bg-placeholder h-[176px] w-full lg:mr-10 max-w-[450px] mb-6 lg:mb-0'> */}
+                                        <Image src="/assets/main/20.svg" width={374} height={135} alt="20 anos" className='mb-6 lg:mb-0 lg:mr-10' />
+                                    {/* </div> */}
+                                    <div className='bg-placeholder h-[176px] w-full max-w-[506px] rounded-[28px]'></div>
+                                </div>
                             </div>
 
-                            <div className='container pb-32'>
+                            <div className='container pt-32 pb-32' id='regulamentacao'>
                                 <div className='grid grid-cols-16 gap-3 pb-24'>
                                     <div className='col-span-full lg:col-span-9'>
                                         <h1 className=' content-primary text-xl sm:text-2xl pb-6'>Eficiência em importação <br></br> de medicamentos e produtos para saúde.</h1>
@@ -117,7 +123,7 @@ const Sobre = () => {
                                 </div>
                                 <div className='grid grid-cols-16'>
                                     <div className='col-span-full lg:col-span-11 lg:col-start-6 pb-40'>
-                                        <div className=' p-10 lg:p-20 bg-gradient-radial rounded-[28px]'>
+                                        <div className=' p-10 lg:p-20 bg-gradient-radial-inverted rounded-[28px]'>
                                             <Accordion />
                                         </div>
                                     </div>

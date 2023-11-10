@@ -17,8 +17,8 @@ const Footer = () => {
                                 <Link href="/" className="">
                                     <Image
                                         src="/assets/main/alt-logo.svg"
-                                        className="grayscale brightness-[10] mb-6"
-                                        alt="BRITE Informática"
+                                        className="mb-6"
+                                        alt="Kemmi Farma"
                                         height={60}
                                         width={100}
                                     />
@@ -39,12 +39,13 @@ const Footer = () => {
                             <div className="pb-16 flex flex-col sm:flex-row justify-between w-full sm:items-center">
                                 <p className="content-secondary text-base mb-3 sm:mb-0 max-w-[260px] "> © {new Date().getFullYear()} Kemmi Farma. All rights reserved. </p>
                                 <div className="flex flex-row">
-                                    <DefaultButton href="/" text="Solicitar cotação" style="btn-black" icon="brightness-[2000%]" />
+                                    <DefaultButton href="/contato" text="Solicitar cotação" style="btn-black" icon="brightness-[2000%]" />
                                 </div>
                             </div>
                             <div className="flex flex-row justify-between w-full items-center">
-                                <div>
-                                    <p className="content-secondary text-xs mb-2 max-w-[260px] "> created at hokup.com.br </p>
+                                <div className="flex flex-row items-center mb-2">
+                                    <Image src="/assets/icons/general/hokup.svg" height={16} width={16} alt="hokup.com.br" className="mr-3" />
+                                    <p className="content-secondary text-xs max-w-[260px] "> created at hokup.com.br </p>
                                 </div>
                                 <div className="flex flex-row">
                                     {generalData.links.map((i) => (

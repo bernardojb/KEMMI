@@ -43,11 +43,22 @@ a {
 }
 
 .btn-black {
-  @apply bg-text-primary text-white transition-all ease-out duration-200 leading-[100%];
+  @apply bg-text-primary text-white border border-gray-lighter leading-[100%] transition-all ease-out duration-500
+  group-hover:transition-all group-hover:ease-out group-hover:duration-500
+  group-hover:bg-gradient-radial
+  group-hover:drop-shadow-[0_5px_15px_rgba(121,128,151,0.35)]
+  group-hover:rounded-[46px]
+  group-hover:border-white
+  group-hover:text-text-primary;  
 }
 
 .btn-gray {
-  @apply bg-gray-light text-text-primary transition-all ease-out duration-200 leading-[100%];
+  @apply bg-gray-light text-text-primary border border-gray-lighter leading-[100%] transition-all ease-out duration-500
+  group-hover:transition-all group-hover:ease-out group-hover:duration-500
+  group-hover:bg-gradient-radial
+  group-hover:drop-shadow-[0_5px_15px_rgba(121,128,151,0.35)]
+  group-hover:rounded-[46px]
+  group-hover:border-white;   
 }
 
 .btn-white {
@@ -65,3 +76,15 @@ a {
 .content-subtitle{
   @apply font-monument text-text-extra-0 not-italic	leading-[normal]
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #23242E !important;
+}
+
+/* .swiper-pagination-bullet-active-next {
+  background-color: #798097 !important;
+}
+
+.swiper-pagination-bullet-active-prev {
+  background-color: #798097 !important;
+} */

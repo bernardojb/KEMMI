@@ -38,11 +38,12 @@ module.exports = {
       'warning': '#C84529',
       'success': '#1BD1B8',
       'gray': '#798097',
-      'gray-light': 'rgba(121, 128, 151, 0.20)',
+      'gray-light': '#79809733',
       'black': '#000000',
       'white': '#fff',
 
-      'placeholder' : '#7a7a7a33'
+      'placeholder' : '#7a7a7a33',
+      'gray-lighter': '#79809700',
     },
     container: {
       center: true,
@@ -59,7 +60,6 @@ module.exports = {
       '4xl': '3rem',
       '8xl': '7.5rem',
       '16xl': '11.25rem',
-
     },
     fontFamily: {
       'monument': ["PP Monument Extended"],
@@ -71,8 +71,9 @@ module.exports = {
         'navbar-gradient': 'radial-gradient(19777.82% 329.9% at 68.78% -67.59%, rgba(255, 255, 255, 0.90) 0%, rgba(233, 236, 238, 0.90) 100%)',
         'gradient-radial': 'radial-gradient(56.36% 125.57% at 68.87% 5.97%, #E3E6E9 0%, #F5F5F5 65.63%, #FFF 100%)',
         'gradient-radial-inverted': 'radial-gradient(56.36% 125.57% at 68.87% 5.97%, #fff 0%, #F5F5F5 65.63%, #E3E6E9 100%)',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-cta':'radial-gradient(100% 250% at 10% 50%, #FAFDFF 15%, #EEFBFD 30%, #A7F8DF 70%, #89C6D8 95%)',
+        'gradient-20': 'radial-gradient(75% 130% at 40% 15%, #FFF 25%, #F5F5F5 50%, #E3E6E9 65%, #D6DDE3 100%)',
+        'gradient-contact':'radial-gradient(at 88% 92%, hsla(300,0%,96%,1) 0px, transparent 50%), radial-gradient(at 2% 60%, hsla(205,100%,98%,1) 0px, transparent 100%), radial-gradient(at 100% 62%, hsla(205,100%,98%,1) 0px, transparent 50%),radial-gradient(at 64% 40%, hsla(161,100%,65%,1) 0px, transparent 50%), radial-gradient(at 200% 31%, hsla(175,96%,81%,1) 0px, transparent 50%), radial-gradient(at 120% 20%, hsla(203,78%,62%,1) 0px, transparent 50%), radial-gradient(at 26% 250%, hsla(214,26%,79%,1) 0px, transparent 50%)',
       },
     },
     columns: {

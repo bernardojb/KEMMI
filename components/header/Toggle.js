@@ -5,9 +5,8 @@ const Path = props => (
     <motion.path
         fill="transparent"
         strokeWidth="2"
-        stroke="#fff"
-        strokeLinecap="round"
-        {...props}
+        {...props} 
+        transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}       
     />
 );
 
@@ -22,32 +21,31 @@ const MenuToggle = ({ toggle }) => (
             justifyContent: 'center',
             alignItems: 'center',
             width: '100%',
-            height: 'auto',
-            cursor: 'pointer'
+            height: '100%',
+            cursor: 'pointer',
         }}>
-        <svg width="40" height="23" viewBox="0 0 23 23">
+        <svg width="47" height="26" viewBox="0 0 47 26">
             <Path
                 strokeLinecap="square"
                 variants={{
-                    closed: { d: "M 2 2.5 L 20 2.5" },
-                    open: { d: "M 3 16.5 L 17 2.5" }
-                }}
+                    closed: { d: "M7 18H34M21.5 12.5H39M10.5 7H34", stroke:"white", opacity: 1 },
+                    open: {d: "M7 18H2M3 12.5H39M1 7H1", stroke:"transparent", opacity: 0 }
+                }}                
+            />
+            <Path
+                strokeLinecap="square"                
+                variants={{
+                    closed: { d: "M1 20L3 50", stroke:'transparent', opacity: 0 },
+                    open: { d:"M16 20L31 5", stroke:"white", opacity: 1 }
+                }}                  
             />
             <Path
                 strokeLinecap="square"
-                d="M 10 9.423 L 30 9.423"
                 variants={{
-                    closed: { opacity: 1 },
-                    open: { opacity: 0 }
+                    closed: { d: "M1 2L1 5", stroke:"transparent", opacity: 0 },
+                    open: { d: "M31 20L16 5", stroke:"white", opacity: 1 }
                 }}
-                transition={{ duration: 0.1 }}
-            />
-            <Path
-                strokeLinecap="square"
-                variants={{
-                    closed: { d: "M 2 16.346 L 20 16.346" },
-                    open: { d: "M 3 2.5 L 17 16.346" }
-                }}
+                
             />
         </svg>
     </button>

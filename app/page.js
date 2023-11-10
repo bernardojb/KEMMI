@@ -26,10 +26,10 @@ const Home = () => {
               <p className='content-secondary text-base sm:text-lg pb-14'>Somos uma empresa especializada que ajuda você a importar medicamentos especiais dos Estados Unidos e Europa.</p>
               <div className='flex flex-row flex-wrap items-center'>
                 <div className='mb-3'>
-                  <DefaultButton href="/" text="Solicitar cotação" style="btn-black mr-3" icon="brightness-[2000%]" />
+                  <DefaultButton href="/contato" text="Solicitar cotação" style="btn-black mr-3" icon="brightness-[2000%]" />
                 </div>
                 <div className='mb-3'>
-                  <DefaultButton href="/" text="Como importamos" style="btn-gray" />
+                  <DefaultButton href="/sobre" text="Como importamos" style="btn-gray" />
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ const Home = () => {
                 </div>
               </div>
               <div className='absolute right-8 bottom-8'>
-                <ChevronPill href="/" />
+                <ChevronPill href="/sobre" />
               </div>
             </div>
           </div>
@@ -104,11 +104,11 @@ const Home = () => {
                 <h1 className=' content-primary text-lg lg:text-2xl pb-6 break-words'>Somos uma empresa que ajuda você a importar medicamentos especiais.</h1>
                 <p className='content-secondary text-base lg:text-lg pb-14'>Oferecemos um atendimento ágil e cuidamos da sua saúde através da importação inteligente.</p>
                 <div className='pb-[90px] w-fit '>
-                  <DefaultButton href="/" text="Sobre a Kemmi" style="btn-black" icon="brightness-[2000%]" />
+                  <DefaultButton href="/sobre" text="Sobre a Kemmi" style="btn-black" icon="brightness-[2000%]" />
                 </div>
                 <div className='flex flex-row items-center'>
                   <Image src="/assets/images/anvisa.svg" width={39} height={34} alt="" className='mr-3' />
-                  <p className='max-w-[350px] content-secondary text-base sm:text-lg'>Seguimos todas regulamentações e exigências da ANVISA.</p>
+                  <p className='max-w-[350px] content-secondary text-base'>Seguimos todas regulamentações e exigências da ANVISA.</p>
                 </div>
               </div>
 
@@ -132,12 +132,12 @@ const Home = () => {
                 <h1 className=' content-primary text-xl lg:text-2xl pb-6'>Portal de importação de medicamentos não registrados no Brasil.</h1>
                 <p className='content-secondary text-base sm:text-lg pb-14'>Contamos com mais de 20 anos de experiência no mercado hospitalar e no segmento de alta complexidade.</p>
                 <div className='w-fit'>
-                <DefaultButton href="/" text="Nossa história" style="btn-black" icon="brightness-[2000%]" />
+                <DefaultButton href="/sobre" text="Nossa história" style="btn-black" icon="brightness-[2000%]" />
                 </div>
               </div>
 
-              <div className='mb-3 col-span-full md:col-start-10 lg:col-span-5 lg:col-start-12 bg-placeholder rounded-[28px] p-8 flex justify-center items-center flex-col h-[343px]'>
-                <h1 className='content-primary text-[120px]' >20</h1>
+              <div className='mb-3 col-span-full md:col-start-10 lg:col-span-5 lg:col-start-12 bg-gradient-20 rounded-[28px] p-8 flex justify-center items-center flex-col h-[343px]'>
+                <Image src="/assets/main/20.svg" width="252" height="92" alt='20 anos' />
                 <p className='content-secondary text-lg text-center'>Anos de experiência no mercado farmacêutico.</p>
               </div>
 
