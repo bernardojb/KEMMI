@@ -18,7 +18,7 @@ export default function Header() {
   //anim
   const openNav = {
     open: {
-      height: '100vh',
+      height: '100lvh',
       backgroundColor: '#ffffff',
       transition: {
         type: 'spring',
