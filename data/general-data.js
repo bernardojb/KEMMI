@@ -41,6 +41,38 @@ const generalData =
         //     href: '',
         //     image: '/assets/icons/social/instagram.svg',
         // }
+    ],
+    darkLinks: [
+        {
+            name: 'Instagram',
+            href: 'https://www.instagram.com/hokup.com.br/',
+            image: '/assets/icons/social/instagram-dark.svg',
+        },
+        {
+            name: 'Linkedin',
+            href: 'https://www.linkedin.com/company/hokup/',
+            image: '/assets/icons/social/linkedin-dark.svg',
+        },
+        // {
+        //     name:'Facebook',
+        //     href: '',
+        //     image: '/assets/icons/social/facebook-dark.svg',
+        // },
+        // {
+        //     name:'X',
+        //     href: '',
+        //     image: '/assets/icons/social/x-dark.svg',
+        // },
+        // {
+        //     name:'Youtube',
+        //     href: '',
+        //     image: '/assets/icons/social/youtube-dark.svg',
+        // },
+        // {
+        //     name:'Threads',
+        //     href: '',
+        //     image: '/assets/icons/social/threads-dark.svg',
+        // }
     ]
 }
 

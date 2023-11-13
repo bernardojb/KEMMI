@@ -85,20 +85,21 @@ export default function Header() {
       >
         <div className='flex flex-row container'>
           <div className='pr-12 py-2 mt-3 flex justify-center'>
-            <a href='/' className='h-fit'>
+            <a href='/' className='w-[153px] h-[42px]'>
               <Image
                 src="/assets/main/main-logo.svg"
                 alt="Hokup Logo"
-                width={144}
-                height={44}
+                width={153}
+                height={42}
+                className='w-full h-full'
               />
             </a>
           </div>
           
-          <div className={`px-3 py-2 mt-3 flex items-center flex-row mx-auto rounded-full backdrop-blur-[12.5px] w-full bg-navbar-gradient  `}>
+          <div className={`px-3 py-2 mt-3 flex items-center flex-row mx-auto rounded-full w-full bg-navbar-gradient`}>
             {/* Logo */}
             <Link href="/contato" className='hidden sm:flex ml-auto' onClick={() => setToggle(false)} >
-              <div className='bg-gray-light h-[38px] rounded-full flex items-center px-[22px] mr-3'>
+              <div className='bg-gray-light-solid h-[38px] rounded-full flex items-center px-[22px] mr-3'>
                 <p className='font-neue-semibold text-sm text-navbar-text-hover whitespace-nowrap'>Solicitar cotação</p>
               </div>
             </Link>
@@ -153,7 +154,7 @@ export default function Header() {
             variants={openSocial}
           >
             <div className='flex flex-row mb-[14px] '>
-              {generalData.links.map((i) => (
+              {generalData.darkLinks.map((i) => (
                 <a target='_blank' href={i.href} className='mr-4 z-10'>
                   <Image
                     src={i.image}

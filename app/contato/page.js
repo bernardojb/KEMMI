@@ -17,8 +17,8 @@ const page = () => {
                             <h1 className='content-primary text-xl sm:text-2xl pb-6'>Fale com a Kemmi.</h1>
                             <p className='content-secondary text-md sm:text-lg pb-7'>Nossos especialistas estão prontos para te ajudar.</p>
                             <div className='flex flex-row mb-10 lg:mb-0'>
-                                {generalData.links.map((i) => (
-                                    <a target='_blank' href={i.href} className='mr-4'>
+                                {generalData.darkLinks.map((i) => (
+                                    <a target='_blank' href={i.href} className='mr-4 brightness-[40%]'>
                                         <Image
                                             src={i.image}
                                             alt={`asd ${i.name}`}

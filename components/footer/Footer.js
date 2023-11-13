@@ -43,7 +43,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="flex flex-row justify-between w-full items-center">
-                                <div className="flex flex-row items-center mb-2">
+                                <div className="flex flex-row items-center mb-2 sm:mb-0">
                                     <Image src="/assets/icons/general/hokup.svg" height={16} width={16} alt="hokup.com.br" className="mr-3" />
                                     <p className="content-secondary text-xs max-w-[260px] "> created at hokup.com.br </p>
                                 </div>
@@ -53,9 +53,9 @@ const Footer = () => {
                                             <Image
                                                 src={i.image}
                                                 alt="Social media icon"
-                                                width={18}
-                                                height={18}
-                                                className="hover:brightness-200 ease-out transition duration-200"
+                                                width={24}
+                                                height={24}
+                                                className="ease-out transition duration-200"
                                             />
                                         </a>
                                     ))}

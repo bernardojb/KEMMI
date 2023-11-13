@@ -12,67 +12,77 @@ import Experience from '@/components/canvas/Experience';
 import { generalData } from '@/data/general-data';
 import ChevronPill from '@/components/buttons/ChevronPill';
 import Carrousel from '@/components/carrousel/Carrousel';
+import Globe from '@/components/canvas/Globe';
 
 const Home = () => {
   return (
     <>
       {/* INTRO */}
-      <section className='relative min-h-screen w-full bg-bg-color-0 '>
-        <div className='container pt-[20px]'>
-          <div className='grid grid-cols-16 min-h-[768px] h-[100vh] gap-3'>
-            <div className=' col-span-full lg:col-span-10 flex flex-col h-full justify-center'>
-              <p className=' text-xs sm:text-sm content-subtitle pb-6'>@KEMMI.FARMA</p>
-              <h1 className=' content-primary text-xl sm:text-2xl pb-6'>Simplificamos a importação de medicamentos especiais.</h1>
-              <p className='content-secondary text-base sm:text-lg pb-14'>Somos uma empresa especializada que ajuda você a importar medicamentos especiais dos Estados Unidos e Europa.</p>
-              <div className='flex flex-row flex-wrap items-center'>
-                <div className='mb-3'>
-                  <DefaultButton href="/contato" text="Solicitar cotação" style="btn-black mr-3" icon="brightness-[2000%]" />
-                </div>
-                <div className='mb-3'>
-                  <DefaultButton href="/sobre" text="Como importamos" style="btn-gray" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <div className='absolute h-[180vh] w-screen top-0 left-0 z-10'>
-          <Experience />
-        </div> */}
-      </section>
+      <div className='relative bg-bg-color-0 '>
 
-      <section className='bg-bg-color-0 pb-24'>
-        <div className='container'>
-          <div className='grid grid-cols-16'>
-            <div className='col-span-full lg:col-span-8 h-full bg-gradient-radial rounded-[28px] p-8 relative max-w-[610px]'>
-              <h1 className='content-primary text-base sm:text-lg pb-3'>Acesso global.</h1>
-              <p className='content-secondary text-base sm:text-lg max-w-[537px] pb-8'>Oferecemos fácil acesso  aos melhores medicamentos e laboratórios do mundo.</p>
-              <div className='grid grid-cols-8 gap-3 pb-12 sm:pb-0'>
-                <div className='col-span-4 sm:col-span-3'>
-                  <Image src="/assets/main/client-01.svg" height={42} width={154} alt='' />
+        <section className='relative min-h-screen w-full  z-10'>
+          <div className='container pt-[20px]'>
+            <div className='grid grid-cols-16 min-h-[768px] h-[100vh] gap-3'>
+              <div className=' col-span-full lg:col-span-10 flex flex-col h-full justify-center'>
+                <p className=' text-xs sm:text-sm content-subtitle pb-6'>@KEMMI.FARMA</p>
+                <h1 className=' content-primary text-xl sm:text-2xl pb-6'>Simplificamos a importação de medicamentos especiais.</h1>
+                <p className='content-secondary text-base sm:text-lg pb-14'>Somos uma empresa especializada que ajuda você a importar medicamentos especiais dos Estados Unidos e Europa.</p>
+                <div className='flex flex-row flex-wrap items-center'>
+                  <div className='mb-3'>
+                    <DefaultButton href="/contato" text="Solicitar cotação" style="btn-black mr-3" icon="brightness-[2000%]" />
+                  </div>
+                  <div className='mb-3'>
+                    <DefaultButton href="/sobre" text="Como importamos" style="btn-gray" />
+                  </div>
                 </div>
-                <div className='col-span-4 sm:col-span-3'>
-                  <Image src="/assets/main/client-02.svg" height={42} width={154} alt='' />
-                </div>
-                <div className='col-span-4 sm:col-span-3 sm:col-start-3'>
-                  <Image src="/assets/main/client-03.svg" height={42} width={154} alt='' />
-                </div>
-                <div className='col-span-4 sm:col-span-3'>
-                  <Image src="/assets/main/client-04.svg" height={42} width={154} alt='' />
-                </div>
-                <div className='col-span-4 sm:col-span-3'>
-                  <Image src="/assets/main/client-05.svg" height={42} width={154} alt='' />
-                </div>
-                <div className='col-span-4 sm:col-span-3'>
-                  <Image src="/assets/main/client-06.svg" height={42} width={154} alt='' />
-                </div>
-              </div>
-              <div className='absolute right-8 bottom-8'>
-                <ChevronPill href="/sobre" />
               </div>
             </div>
           </div>
+        </section>
+
+        <div className='absolute w-screen h-full top-0 right-0 flex justify-end items-end z-0'>
+          <div>
+          <Globe />
+          </div>
         </div>
-      </section>
+
+        <section className=' pb-24 z-10'>
+          <div className='container'>
+            <div className='grid grid-cols-16'>
+              <div className='col-span-full lg:col-span-8 h-full bg-gradient-radial rounded-[28px] p-8 relative max-w-[610px]'>
+                <h1 className='content-primary text-base sm:text-lg pb-3'>Acesso global.</h1>
+                <p className='content-secondary text-base sm:text-lg max-w-[537px] pb-8'>Oferecemos fácil acesso  aos melhores medicamentos e laboratórios do mundo.</p>
+                <div className='grid grid-cols-8 gap-3 pb-12 sm:pb-0'>
+                  <div className='col-span-4 sm:col-span-3'>
+                    <Image src="/assets/main/client-01.svg" height={42} width={154} alt='' />
+                  </div>
+                  <div className='col-span-4 sm:col-span-3'>
+                    <Image src="/assets/main/client-02.svg" height={42} width={154} alt='' />
+                  </div>
+                  <div className='col-span-4 sm:col-span-3 sm:col-start-3'>
+                    <Image src="/assets/main/client-03.svg" height={42} width={154} alt='' />
+                  </div>
+                  <div className='col-span-4 sm:col-span-3'>
+                    <Image src="/assets/main/client-04.svg" height={42} width={154} alt='' />
+                  </div>
+                  <div className='col-span-4 sm:col-span-3'>
+                    <Image src="/assets/main/client-05.svg" height={42} width={154} alt='' />
+                  </div>
+                  <div className='col-span-4 sm:col-span-3'>
+                    <Image src="/assets/main/client-06.svg" height={42} width={154} alt='' />
+                  </div>
+                </div>
+                <div className='absolute right-8 bottom-8'>
+                  <ChevronPill href="/sobre" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+
+      </div>
 
       <section className='bg-bg-color-0 pb-40'>
         <div className='container'>
@@ -132,7 +142,7 @@ const Home = () => {
                 <h1 className=' content-primary text-xl lg:text-2xl pb-6'>Portal de importação de medicamentos não registrados no Brasil.</h1>
                 <p className='content-secondary text-base sm:text-lg pb-14'>Contamos com mais de 20 anos de experiência no mercado hospitalar e no segmento de alta complexidade.</p>
                 <div className='w-fit'>
-                <DefaultButton href="/sobre" text="Nossa história" style="btn-black" icon="brightness-[2000%]" />
+                  <DefaultButton href="/sobre" text="Nossa história" style="btn-black" icon="brightness-[2000%]" />
                 </div>
               </div>
 
@@ -144,7 +154,7 @@ const Home = () => {
               <div className='mb-3 col-span-full lg:col-span-5 flex justify-center flex-col order-2 lg:order-1'>
                 <p className='content-secondary text-base sm:text-lg mb-[14px]'>Acompanhe a Kemmi</p>
                 <div className='flex flex-row'>
-                  {generalData.links.map((i) => (
+                  {generalData.darkLinks.map((i) => (
                     <a target='_blank' href={i.href} className='mr-4'>
                       <Image
                         src={i.image}

@@ -79,12 +79,23 @@ a {
 
 .swiper-pagination-bullet-active {
   background-color: #23242E !important;
+  padding-right: 6px;
+  padding-left: 6px;
+  border-radius: 10px !important;
 }
 
-/* .swiper-pagination-bullet-active-next {
+.swiper-pagination-bullet-active-next {
+  background-color: #798097 !important;
+}
+
+.swiper-pagination-bullet-active-next-next {
   background-color: #798097 !important;
 }
 
 .swiper-pagination-bullet-active-prev {
   background-color: #798097 !important;
-} */
+}
+
+.swiper-pagination-bullet-active-prev-prev{
+  background-color: #798097 !important;
+}

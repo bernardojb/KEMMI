@@ -39,6 +39,7 @@ module.exports = {
       'success': '#1BD1B8',
       'gray': '#798097',
       'gray-light': '#79809733',
+      'gray-light-solid': '#D2D7DC',
       'black': '#000000',
       'white': '#fff',
 
@@ -50,8 +51,8 @@ module.exports = {
       padding: "1rem",
     },
     fontSize: {
-      xs: '0.8rem',
-      sm: '0.9rem',
+      xs: '0.75rem',
+      sm: '0.875rem',
       base: '1rem',
       md: '1.125rem',
       lg: '1.25rem',
@@ -68,7 +69,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'navbar-gradient': 'radial-gradient(19777.82% 329.9% at 68.78% -67.59%, rgba(255, 255, 255, 0.90) 0%, rgba(233, 236, 238, 0.90) 100%)',
+        'navbar-gradient': 'radial-gradient(100% 100% at 100% 50%, rgba(255, 255, 255, 100) 0%, rgba(233, 236, 238, 0.00) 100%)',
         'gradient-radial': 'radial-gradient(56.36% 125.57% at 68.87% 5.97%, #E3E6E9 0%, #F5F5F5 65.63%, #FFF 100%)',
         'gradient-radial-inverted': 'radial-gradient(56.36% 125.57% at 68.87% 5.97%, #fff 0%, #F5F5F5 65.63%, #E3E6E9 100%)',
         'gradient-cta':'radial-gradient(100% 250% at 10% 50%, #FAFDFF 15%, #EEFBFD 30%, #A7F8DF 70%, #89C6D8 95%)',
