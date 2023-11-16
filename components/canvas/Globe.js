@@ -4,20 +4,23 @@ import { useEffect, useRef } from "react";
 
 // https://github.com/shuding/cobe
 
+let globe
+
 export default function Globe() {
     const canvasRef = useRef();
 
-    useEffect(()=>{
+    useEffect(() => {
         const screen = window.innerWidth
 
         console.log(canvasRef)
         console.log("screen", screen)
-    },[])
+    }, [])
 
     useEffect(() => {
         let phi = 0;
 
-        const globe = createGlobe(canvasRef.current, {
+        globe = createGlobe(canvasRef.current, {
+            context: {},
             devicePixelRatio: 1,
             width: 1350,
             height: 1350,
@@ -35,7 +38,7 @@ export default function Globe() {
                 { location: [37.7595, -122.4367], size: 0.03 },
                 { location: [40.7128, -74.006], size: 0.03 }
             ],
-            offset: [675 , 0 ],
+            offset: [675, 0],
             onRender: (state) => {
                 // Called on every animation frame.
                 // `state` will be an empty object, return updated params.
@@ -45,16 +48,19 @@ export default function Globe() {
         });
 
         return () => {
-            globe.destroy();
+            // globe.destroy();
         };
     }, []);
 
     return (
-        <canvas
-            ref={canvasRef}
-            style={{ aspectRatio: 1 }}
-            className="w-[1350px] h-[1350px] max-w-full"
-        />
+        <>
+            <button className="h-20 w-20 bg-accent" onClick={() => globe.toggle()} />
+            <canvas
+                ref={canvasRef}
+                style={{ aspectRatio: 1 }}
+                className="w-[1350px] h-[1350px] max-w-full"
+            />
+        </>
     );
 }
 
