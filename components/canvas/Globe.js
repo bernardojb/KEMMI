@@ -20,10 +20,9 @@ export default function Globe() {
         let phi = 0;
 
         globe = createGlobe(canvasRef.current, {
-            context: {},
             devicePixelRatio: 1,
-            width: 1350,
-            height: 1350,
+            width: 600 * 2,
+            height: 600 * 2,
             phi: 0,
             theta: 0,
             dark: 0,
@@ -48,7 +47,7 @@ export default function Globe() {
         });
 
         return () => {
-            // globe.destroy();
+            globe.destroy();
         };
     }, []);
 
