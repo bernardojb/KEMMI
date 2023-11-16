@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 
 // https://github.com/shuding/cobe
 
-let globe
 
 export default function Globe() {
     const canvasRef = useRef();
@@ -19,7 +18,7 @@ export default function Globe() {
     useEffect(() => {
         let phi = 0;
 
-        globe = createGlobe(canvasRef.current, {
+        const globe = createGlobe(canvasRef.current, {
             context: { antialias: false },
             devicePixelRatio: 0.75,
             width: 950,
@@ -48,7 +47,7 @@ export default function Globe() {
         });
 
         return () => {
-            // globe.destroy();
+            globe.destroy();
         };
     }, []);
 
@@ -57,7 +56,7 @@ export default function Globe() {
             <canvas
                 ref={canvasRef}
                 style={{ aspectRatio: 1 }}
-                className="hidden md:block w-[1350px] h-[1350px] max-w-full"
+                className={` hidden md:block w-[1350px] h-[1350px] max-w-full"`}
             />
         </>
     );

@@ -1,6 +1,6 @@
 'use client'
 import * as React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import ContactForm from '@/components/contact-form/ContactForm';
@@ -15,9 +15,15 @@ import Carrousel from '@/components/carrousel/Carrousel';
 import Globe from '@/components/canvas/Globe';
 import Animation from '@/components/animations/Animation';
 import { LoadingScreen } from '@/components/loading-screen/LoadingScreen';
+import { useInView } from 'react-intersection-observer';
 
 const Home = () => {
-  const [start, setStart] = useState(false);
+  // const [start, setStart] = useState(false);
+
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
 
   return (
     <Animation>
@@ -48,8 +54,8 @@ const Home = () => {
           </div>
         </section>
 
-        <div className='absolute w-screen h-full top-0 right-0 flex justify-end items-end z-0'>
-            <Globe />
+        <div className='absolute w-screen h-full top-0 right-0 flex justify-end items-end z-0' ref={ref}>
+          {inView ? ( <Globe /> ) : (null)}
         </div>
 
         <section className=' pb-24 z-10'>
