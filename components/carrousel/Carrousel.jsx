@@ -105,7 +105,7 @@ const Carrousel = (props) => {
                     <div className='fixed h-screen w-screen top-0 left-0 bg-placeholder z-[9999] backdrop-blur-2xl flex justify-center items-center cursor-pointer' onClick={() => setToggleModal(false)}></div>
                     <div className='bg-white w-[95vw] lg:w-[80vw] rounded-[28px] z-[99999] p-5 sm:p-10 relative max-h-[90vh]'>
                         <div className='bg-text-primary w-fit h-[38px] rounded-full flex items-center px-[22px] absolute right-8 cursor-pointer ' onClick={() => setToggleModal(false)}>
-                            <Image src="/assets/icons/general/x.svg" height="24" width="24" alt='' className='brightness-[2000%]' />
+                            <Image src="/assets/icons/general/x.svg" height="24" width="24" alt='Close Icon' className='brightness-[2000%]' />
                         </div>
                         <h1 className='content-primary text-base lg:text-lg mb-8'>Lenvima 10mg</h1>
                         <div className='overflow-y-auto max-h-[75vh]'>

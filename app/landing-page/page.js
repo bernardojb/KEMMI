@@ -63,6 +63,7 @@ export default function Home() {
           src="/assets/main/main-logo.svg"
           height={200}
           width={200}
+          alt="Kemmi Logo"
         />
       </div>
 
@@ -141,8 +142,9 @@ export default function Home() {
             <a href={i.href} className='ml-4 brightness-[40%]'>
               <Image
                 src={i.image}
-                height={15}
-                width={15}
+                height={24}
+                width={24}
+                alt={`${i.name} Social Media Icon`}
               />
             </a>
           ))}

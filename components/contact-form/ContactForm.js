@@ -18,7 +18,7 @@ const ContactForm = () => {
         useForm(validate);
 
     return (
-        <section className='bg-bg-color-0 py-40'>
+        <section className='bg-bg-color-0 py-40' id="contact-form">
             <div className='container'>
                 <div className='grid grid-cols-16'>
 
@@ -29,12 +29,12 @@ const ContactForm = () => {
                         <p className='font-neue text-base sm:text-lg mb-3'>Se preferir, entre em contato por:</p>
                         <div className='w-fit'>
                             <a href='tel:+5511996978150' >
-                                <p className='font-neue underline text-base sm:text-lg mb-1 text-text-accent'>(11) 9 9697 8150</p>
+                                <p className='font-neue underline text-base sm:text-lg mb-1 text-text-accent hover:text-text-accent-hover ease-out duration-500 group-hover:transition-all group-hover:ease-out group-hover:duration-500'>(11) 9 9697 8150</p>
                             </a>
                         </div>
                         <div className='w-fit'>
                             <a href='mailto:contato@kemmifarma.com' >
-                                <p className='font-neue underline text-base sm:text-lg mb-1 text-text-accent'>contato@kemmifarma.com</p>
+                                <p className='font-neue underline text-base sm:text-lg mb-1 text-text-accent hover:text-text-accent-hover ease-out duration-500 group-hover:transition-all group-hover:ease-out group-hover:duration-500'>contato@kemmifarma.com</p>
                             </a>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ const ContactForm = () => {
 
                         <div className='flex flex-col lg:flex-row lg:items-center'>
                             <div className='max-w-[480px] lg:mr-7 mb-6 lg:mb-0'>
-                                <p className='content-secondary max-w-[480px] w-full'>Ao enviar este formulário, você concorda com a nossa <Link href="/politica-de-privacidade" className='underline text-text-accent'>Política de Privacidade</Link>.</p>
+                                <p className='content-secondary max-w-[480px] w-full'>Ao enviar este formulário, você concorda com a nossa <Link href="/politica-de-privacidade" className='underline text-text-accent hover:text-text-accent-hover ease-out duration-500 group-hover:transition-all group-hover:ease-out group-hover:duration-500'>Política de Privacidade</Link>.</p>
                             </div>
                             <DefaultButton href="" text="Enviar" style="btn-black" icon="brightness-[2000%]" />
                         </div>

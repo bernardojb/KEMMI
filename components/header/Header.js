@@ -95,11 +95,26 @@ export default function Header() {
               />
             </a>
           </div>
-          
+
           <div className={`px-3 py-2 mt-3 flex items-center flex-row mx-auto rounded-full w-full bg-navbar-gradient`}>
             {/* Logo */}
-            <Link href="/contato" className='hidden sm:flex ml-auto' onClick={() => setToggle(false)} >
-              <div className='bg-gray-light-solid h-[38px] rounded-full flex items-center px-[22px] mr-3'>
+            <Link href="/contato" className='hidden sm:flex ml-auto group' onClick={() => setToggle(false)} >
+              <div className='
+              bg-gray-light-solid 
+              h-[38px] 
+              rounded-full 
+              flex 
+              items-center 
+              px-[22px] 
+              mr-3 
+              transition-all 
+              ease-out 
+              duration-500
+              group-hover:transition-all group-hover:ease-out group-hover:duration-500
+              group-hover:bg-gradient-radial
+              group-hover:drop-shadow-[0_5px_15px_rgba(121,128,151,0.35)]
+              group-hover:rounded-[46px]
+             group-hover:border-white'>
                 <p className='font-neue-semibold text-sm text-navbar-text-hover whitespace-nowrap'>Solicitar cotação</p>
               </div>
             </Link>
@@ -108,9 +123,21 @@ export default function Header() {
             <motion.nav
               initial={false}
               animate={toggle ? "open" : "closed"}
-              className='block ml-auto sm:ml-0'
+              className='block ml-auto sm:ml-0 group'
             >
-              <div className='bg-text-primary h-[38px] w-[68px] rounded-full flex justify-center items-center relative'>
+              <div className='bg-text-primary h-[38px] w-[68px] rounded-full flex justify-center items-center relative
+               transition-all 
+               ease-out 
+               duration-500
+               group-hover:transition-all 
+               group-hover:ease-out 
+               group-hover:duration-500
+               group-hover:bg-gradient-radial
+               group-hover:drop-shadow-[0_5px_15px_rgba(121,128,151,0.35)]
+               group-hover:rounded-[46px]
+               group-hover:border-white
+               group-hover:text-text-primary
+              '>
                 <MenuToggle
                   toggle={() => {
                     setToggle(!toggle)
@@ -158,7 +185,7 @@ export default function Header() {
                 <a target='_blank' href={i.href} className='mr-4 z-10'>
                   <Image
                     src={i.image}
-                    alt={`asd ${i.name}`}
+                    alt={`${i.name} Social Media Icon`}
                     width={24}
                     height={24}
                   />
@@ -173,7 +200,7 @@ export default function Header() {
             </div>
 
             <div className='absolute bottom-0 z-0' style={{ zIndex: "-10 !important" }} >
-              <Image style={{ zIndex: "0px !important" }} className='z-0' src="/assets/main/gradient-k.svg" height={425} width={267} alt='' />
+              <Image style={{ zIndex: "0px !important" }} className='z-0' src="/assets/main/gradient-k.svg" height={425} width={267} alt='Kemmi Gradient Logo' />
             </div>
           </motion.div>
         </div>

@@ -10,7 +10,7 @@ const DefaultButton = ({ href, text, style, icon }) => {
                 <h1 className='button-default font-neue-semibold text-base lg:text-lg pr-[10px]'>
                     {text}
                 </h1>
-                <Image className={`${icon} group-hover:transition-all ease-out duration-500 group-hover:invert`} src="/assets/icons/general/chevron.svg" width="14" height="14" alt="chevron"/>
+                <Image className={`${icon} group-hover:transition-all ease-out duration-500 group-hover:invert`} src="/assets/icons/general/chevron.svg" width="14" height="14" alt="Chevron Icon"/>
             </div>
         </Link>
     )

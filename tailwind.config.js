@@ -29,12 +29,15 @@ module.exports = {
       'text-primary': "#23242E",
       'text-secondary': "#798097",
       'text-accent': "#346BBE",
+      'text-accent-hover': "#183d75",
       'text-extra-0': "#79809799",
       
       'bg-color-0': '#E9ECEE',
       'bg-color-1': '#FFF',
+
+      'card-bg': '#e9ecee99',
       
-      'accent': '#40FFE5',
+      'accent': '#42ffe6',
       'warning': '#C84529',
       'success': '#1BD1B8',
       'gray': '#798097',
@@ -48,7 +51,10 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: "1rem",
+      padding: {
+        DEFAULT: "10px",
+        sm: "1rem"
+      },
     },
     fontSize: {
       xs: '0.75rem',
@@ -75,6 +81,19 @@ module.exports = {
         'gradient-cta':'radial-gradient(100% 250% at 10% 50%, #FAFDFF 15%, #EEFBFD 30%, #A7F8DF 70%, #89C6D8 95%)',
         'gradient-20': 'radial-gradient(75% 130% at 40% 15%, #FFF 25%, #F5F5F5 50%, #E3E6E9 65%, #D6DDE3 100%)',
         'gradient-contact':'radial-gradient(at 88% 92%, hsla(300,0%,96%,1) 0px, transparent 50%), radial-gradient(at 2% 60%, hsla(205,100%,98%,1) 0px, transparent 100%), radial-gradient(at 100% 62%, hsla(205,100%,98%,1) 0px, transparent 50%),radial-gradient(at 64% 40%, hsla(161,100%,65%,1) 0px, transparent 50%), radial-gradient(at 200% 31%, hsla(175,96%,81%,1) 0px, transparent 50%), radial-gradient(at 120% 20%, hsla(203,78%,62%,1) 0px, transparent 50%), radial-gradient(at 26% 250%, hsla(214,26%,79%,1) 0px, transparent 50%)',
+        'request-image': 'url(/assets/images/request.png)',
+        'delivery-image': 'url(/assets/images/delivery.png)',
+        'approval-image': 'url(/assets/images/approval.png)',
+        'request-image-m': 'url(/assets/images/request-m.png)',
+        'delivery-image-m': 'url(/assets/images/delivery-m.png)',
+        'approval-image-m': 'url(/assets/images/approval-m.png)',
+        'about-image': 'url(/assets/images/about-kemmi.png)',
+        'about-image-2': 'url(/assets/images/about-kemmi-2.png)',
+        'about-image-2-m': 'url(/assets/images/about-kemmi-2-m.png)',
+        'about-image-3': 'url(/assets/images/about-kemmi-3.png)',
+        'about-kemmi-logo': 'url(/assets/images/about-kemmi-logo.png)',
+        'about-k': 'url(/assets/images/about-k-logo.png)',
+        'medicine-image': 'url(/assets/images/medicine-box-01.png)',
       },
     },
     columns: {

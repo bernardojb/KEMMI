@@ -5,10 +5,11 @@ import DefaultButton from '@/components/buttons/DefaultButton'
 import Link from 'next/link'
 import { generalData } from '@/data/general-data'
 import ContactCard from '@/components/cards/ContactCard'
+import Animation from '@/components/animations/Animation';
 
 const page = () => {
     return (
-        <>
+        <Animation>
             <section className='bg-bg-color-0 pt-64'>
                 <div className='container'>
                     <div className='grid grid-cols-16'>
@@ -18,10 +19,10 @@ const page = () => {
                             <p className='content-secondary text-md sm:text-lg pb-7'>Nossos especialistas estão prontos para te ajudar.</p>
                             <div className='flex flex-row mb-10 lg:mb-0'>
                                 {generalData.darkLinks.map((i) => (
-                                    <a target='_blank' href={i.href} className='mr-4 brightness-[40%]'>
+                                    <a target='_blank' href={i.href} className='mr-4 hover:brightness-[300%] ease-out duration-500 group-hover:transition-all group-hover:ease-out group-hover:duration-500'>
                                         <Image
                                             src={i.image}
-                                            alt={`asd ${i.name}`}
+                                            alt={`${i.name} Social Media Icon`}
                                             width={24}
                                             height={24}
                                         />
@@ -37,7 +38,7 @@ const page = () => {
             </section>
 
             <ContactForm />
-        </>
+        </Animation>
     )
 }
 

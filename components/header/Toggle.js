@@ -26,6 +26,15 @@ const MenuToggle = ({ toggle }) => (
         }}>
         <svg width="47" height="26" viewBox="0 0 47 26">
             <Path
+            className="group-hover:stroke-text-primary transition-all 
+               ease-out 
+               duration-500
+               group-hover:transition-all 
+               group-hover:ease-out 
+               group-hover:duration-500"
+            style={{
+                stroke:''
+            }}
                 strokeLinecap="square"
                 variants={{
                     closed: { d: "M7 18H34M21.5 12.5H39M10.5 7H34", stroke:"white", opacity: 1 },
@@ -33,6 +42,15 @@ const MenuToggle = ({ toggle }) => (
                 }}                
             />
             <Path
+            className="group-hover:stroke-text-primary transition-all 
+               ease-out 
+               duration-500
+               group-hover:transition-all 
+               group-hover:ease-out 
+               group-hover:duration-500"
+            style={{
+                stroke:''
+            }}
                 strokeLinecap="square"                
                 variants={{
                     closed: { d: "M1 20L3 50", stroke:'transparent', opacity: 0 },
@@ -40,6 +58,15 @@ const MenuToggle = ({ toggle }) => (
                 }}                  
             />
             <Path
+            className="group-hover:stroke-text-primary transition-all 
+               ease-out 
+               duration-500
+               group-hover:transition-all 
+               group-hover:ease-out 
+               group-hover:duration-500"
+            style={{
+                stroke:''
+            }}
                 strokeLinecap="square"
                 variants={{
                     closed: { d: "M1 2L1 5", stroke:"transparent", opacity: 0 },

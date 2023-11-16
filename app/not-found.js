@@ -8,7 +8,7 @@ const notFound = () => {
     return (
         <section className=' bg-bg-color-0 min-h-[90vh]'>
             <div className='container relative h-full min-h-[90vh] flex justify-center items-center'>
-                <Image className=' z-0 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]' src="/assets/images/404.svg" height={520} width={845} alt="404" />
+                <Image className=' z-0 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]' src="/assets/images/404.svg" height={520} width={845} alt="404 - Page not found" />
                 <div className='z-10 flex justify-center items-center flex-col'>
                     <p className='content-subtitle text-sm mb-6'>OPS!</p>
                     <h1 className='content-primary text-2xl mb-6'>Página não encontrada.</h1>

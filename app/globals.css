@@ -43,7 +43,8 @@ a {
 }
 
 .btn-black {
-  @apply bg-text-primary text-white border border-gray-lighter leading-[100%] transition-all ease-out duration-500
+  @apply bg-text-primary text-white border border-gray-lighter leading-[100%] 
+  transition-all ease-out duration-500
   group-hover:transition-all group-hover:ease-out group-hover:duration-500
   group-hover:bg-gradient-radial
   group-hover:drop-shadow-[0_5px_15px_rgba(121,128,151,0.35)]
@@ -53,7 +54,10 @@ a {
 }
 
 .btn-gray {
-  @apply bg-gray-light text-text-primary border border-gray-lighter leading-[100%] transition-all ease-out duration-500
+  @apply bg-gray-light text-text-primary border border-gray-lighter leading-[100%] 
+  transition-all 
+  ease-out 
+  duration-500
   group-hover:transition-all group-hover:ease-out group-hover:duration-500
   group-hover:bg-gradient-radial
   group-hover:drop-shadow-[0_5px_15px_rgba(121,128,151,0.35)]
