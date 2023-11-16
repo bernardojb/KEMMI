@@ -146,7 +146,7 @@ const Home = () => {
             <p className=' text-xs sm:text-sm content-subtitle pb-6'>PRODUTOS</p>
             <h1 className=' content-primary text-xl lg:text-2xl pb-12'>Medicamentos mais solicitados</h1>
             <div className='overflow-x-hidden'>
-              {/* <Carrousel /> */}
+              <Carrousel />
             </div>
           </div>
 

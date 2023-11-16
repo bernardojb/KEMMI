@@ -50,7 +50,7 @@ const Footer = () => {
                                     <p className="content-secondary text-xs max-w-[260px] "> created at hokup.com.br </p>
                                 </Link>
                                 <div className="order-1 sm:order-2 flex flex-row pb-9 sm:pb-0 ">
-                                    {/* {generalData.links.map((i) => (
+                                    {generalData.links.map((i) => (
                                         <a target='_blank' href={i.href} className="mr-4 hover:brightness-0 ease-out duration-500 hover:transition-all hover:ease-out hover:duration-500">
                                             <Image
                                                 src={i.image}
@@ -60,7 +60,7 @@ const Footer = () => {
                                                 className="ease-out transition duration-200"
                                             />
                                         </a>
-                                    ))} */}
+                                    ))}
                                 </div>
                             </div>
                         </div>
