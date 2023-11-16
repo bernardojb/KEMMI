@@ -48,10 +48,8 @@ const Home = () => {
           </div>
         </section>
 
-        <div className='absolute w-screen h-full top-0 right-0 flex justify-center items-center z-0'>
-          <div>
+        <div className='absolute w-screen h-full top-0 right-0 flex justify-end items-end z-0'>
             <Globe />
-          </div>
         </div>
 
         <section className=' pb-24 z-10'>
