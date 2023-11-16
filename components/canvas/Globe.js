@@ -35,7 +35,7 @@ export default function Globe() {
                 { location: [37.7595, -122.4367], size: 0.03 },
                 { location: [40.7128, -74.006], size: 0.03 }
             ],
-            offset: [1350 , 0 ],
+            offset: [675 , 0 ],
             onRender: (state) => {
                 // Called on every animation frame.
                 // `state` will be an empty object, return updated params.
