@@ -19,8 +19,8 @@ export default function Globe() {
 
         const globe = createGlobe(canvasRef.current, {
             devicePixelRatio: 2,
-            width: 1350 * 2,
-            height: 1350 * 2,
+            width: 850 * 2,
+            height: 850 * 2,
             phi: 0,
             theta: 0,
             dark: 0,
@@ -35,7 +35,7 @@ export default function Globe() {
                 { location: [37.7595, -122.4367], size: 0.03 },
                 { location: [40.7128, -74.006], size: 0.03 }
             ],
-            offset: [1350 ,0 ],
+            offset: [350 , 0 ],
             onRender: (state) => {
                 // Called on every animation frame.
                 // `state` will be an empty object, return updated params.
@@ -53,7 +53,7 @@ export default function Globe() {
         <canvas
             ref={canvasRef}
             style={{ aspectRatio: 1 }}
-            className="w-[1350px]  h-[1350px] max-w-full"
+            className="w-[850px] h-[850px] max-w-full"
         />
     );
 }

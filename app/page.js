@@ -48,7 +48,7 @@ const Home = () => {
           </div>
         </section>
 
-        <div className='absolute w-screen h-full top-0 right-0 flex justify-end items-end z-0'>
+        <div className='absolute w-screen h-full top-0 right-0 flex justify-center items-center z-0'>
           <div>
             <Globe />
           </div>
