@@ -20,14 +20,15 @@ export default function Globe() {
         let phi = 0;
 
         globe = createGlobe(canvasRef.current, {
+            context: { antialias: false },
             devicePixelRatio: 0.75,
-            width:  950,
+            width: 950,
             height: 950,
             phi: 0,
             theta: 0,
             dark: 0,
-            diffuse: 1.2,
-            mapSamples: 10000,
+            diffuse: 0.5,
+            mapSamples: 8000,
             mapBrightness: 6,
             baseColor: [1, 1, 1],
             markerColor: [0.25, 1, 0.9],
