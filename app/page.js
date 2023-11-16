@@ -20,7 +20,7 @@ import { useInView } from 'react-intersection-observer';
 const Home = () => {
   // const [start, setStart] = useState(false);
 
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0,
   });

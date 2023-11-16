@@ -20,22 +20,34 @@ export default function Globe() {
 
         const globe = createGlobe(canvasRef.current, {
             context: { antialias: false },
-            devicePixelRatio: 0.75,
-            width: 950,
-            height: 950,
+            devicePixelRatio: 1,
+            width: 1250,
+            height: 1250,
             phi: 0,
-            theta: 0,
+            theta: 0.2,
             dark: 0,
-            diffuse: 0.5,
-            mapSamples: 8000,
-            mapBrightness: 6,
-            baseColor: [1, 1, 1],
-            markerColor: [0.25, 1, 0.9],
+            diffuse: 3,
+            mapSamples: 7000,
+            mapBrightness: 2,
+            baseColor: [0.95, 0.95, 0.95],
+            markerColor: [0, 1, 0.8],
             glowColor: [1, 1, 1],
+            opacity:0.9,
             markers: [
                 // longitude latitude
-                { location: [37.7595, -122.4367], size: 0.03 },
-                { location: [40.7128, -74.006], size: 0.03 }
+                { location: [40.75030307139222, -73.97266663185377], size: 0.1 }, //PFIZER NY,
+                { location: [-23.629269814654965, -46.70806227116496], size: 0.1 }, //PFIZER BRASIL
+                { location: [40.644611312393806, -74.64021687239416], size: 0.1 }, //KYOWA KIRIN
+                { location: [48.7245758181629, -74.37946693248628], size: 0.1 }, //BRYSTOL
+                { location: [33.12537009482279, -95.23305487283119], size: 0.1 }, //ASTRAZENECA
+                { location: [-23.597333228111566, -46.86411201183329], size: 0.1 }, //ASTRAZENECA BRASIL
+                { location: [43.606758512694896, -79.7527824927525], size: 0.1 }, //roche
+                { location: [43.606758512694896, -79.7527824927525], size: 0.1 }, //roche
+                { location: [45.32651171528461, 14.444021864455495], size: 0.1 }, //roche
+                { location: [21.555842178164095, 39.16580415586747], size: 0.1 }, //roche
+                { location: [24.471592072971443, 54.346498385696485], size: 0.1 }, //roche
+                { location: [10.774235974345606, 106.7049042559173], size: 0.1 }, //roche
+
             ],
             offset: [600, 0],
             onRender: (state) => {
