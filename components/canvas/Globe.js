@@ -54,11 +54,10 @@ export default function Globe() {
 
     return (
         <>
-            <button className="h-20 w-20 bg-accent" onClick={() => globe.toggle()} />
             <canvas
                 ref={canvasRef}
                 style={{ aspectRatio: 1 }}
-                className="w-[1350px] h-[1350px] max-w-full"
+                className="hidden md:block w-[1350px] h-[1350px] max-w-full"
             />
         </>
     );
