@@ -1,28 +1,39 @@
 'use client'
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
+import Media from 'react-media';
 
 // https://github.com/shuding/cobe
 
+let globe
 
 export default function Globe() {
     const canvasRef = useRef();
 
-    useEffect(() => {
-        const screen = window.innerWidth
+    // useEffect(() => {
+    //     const screen = window.innerWidth
 
-        console.log(canvasRef)
-        console.log("screen", screen)
-    }, [])
+    //     addEventListener("resize", (event) => { console.log(event) });
+
+    //     onresize = (event) => { console.log(event) };
+    // })
 
     useEffect(() => {
+        let width = 0;
+        const onResize = () => {
+            canvasRef.current && (width = canvasRef.current.offsetWidth)
+            console.log(width)
+        }
+        window.addEventListener('resize', onResize)
+
+        onResize()
+
         let phi = 0;
-
-        const globe = createGlobe(canvasRef.current, {
+        globe = createGlobe(canvasRef.current, {
             context: { antialias: false },
-            devicePixelRatio: 1,
-            width: 1250,
-            height: 1250,
+            devicePixelRatio: 0.75,
+            width: 950,
+            height: 950,
             phi: 0,
             theta: 0.2,
             dark: 0,
@@ -32,7 +43,8 @@ export default function Globe() {
             baseColor: [0.95, 0.95, 0.95],
             markerColor: [0, 1, 0.8],
             glowColor: [1, 1, 1],
-            opacity:0.9,
+            opacity: 0.9,
+            scale: width < 750 ? 0.7 : 1 ,
             markers: [
                 // longitude latitude
                 { location: [40.75030307139222, -73.97266663185377], size: 0.1 }, //PFIZER NY,
@@ -49,7 +61,7 @@ export default function Globe() {
                 { location: [10.774235974345606, 106.7049042559173], size: 0.1 }, //roche
 
             ],
-            offset: [600, 0],
+            offset: [ width < 750 ? -500 : 500, 0],
             onRender: (state) => {
                 // Called on every animation frame.
                 // `state` will be an empty object, return updated params.
@@ -64,13 +76,14 @@ export default function Globe() {
     }, []);
 
     return (
-        <>
+        <div className="relative">
+            {/* <button className="h-20 w-20 bg-accent absolute right-9 top-9" onClick={() => globe.toggle()} /> */}
             <canvas
                 ref={canvasRef}
                 style={{ aspectRatio: 1 }}
-                className={` hidden md:block w-[1350px] h-[1350px] max-w-full"`}
+                className="w-[100vw] lg:w-[1350px] h-[1350px] max-w-full"
             />
-        </>
+        </div>
     );
 }
 

@@ -139,7 +139,7 @@ export default function Home() {
         <div
           className='flex flex-row w-full justify-end'>
           {generalData.links.map((i) => (
-            <a href={i.href} className='ml-4 brightness-[40%]'>
+            <a href={i.href} className='ml-4 brightness-[40%]' key={i.id}>
               <Image
                 src={i.image}
                 height={24}

@@ -6,8 +6,6 @@ const useForm = validate => {
         name: '',
         email: '',
         phone: '',
-        office: '',
-        institution: '',
         message: '',
     });
 

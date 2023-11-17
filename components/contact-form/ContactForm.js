@@ -39,94 +39,109 @@ const ContactForm = () => {
                         </div>
                     </div>
 
-                    <div className='col-span-16 lg:col-start-7 lg:col-span-full rounded-[28px] bg-white px-6 py-10 lg:px-12 lg:py-16'>
+                    <div className='col-span-16 lg:col-start-7 lg:col-span-full rounded-[28px] bg-gradient-radial px-6 py-10 lg:px-12 lg:py-16 border border-white shadow-sm'>
                         <h1 className=' font-monument text-xl text-text-secondary mb-9'>Informações pessoais</h1>
 
-                        <div className='flex flex-col sm:flex-row items-start sm:items-center mb-6'>
+                        <div className='flex flex-col sm:flex-row items-start sm:items-center mb-6 relative'>
                             <div className='w-[214px] mr-7'>
                                 <p className='w-[214px] whitespace-nowrap text-base sm:text-lg font-neue text-primary mb-3 lg:mb-0'>Nome</p>
                             </div>
                             <input
-                                className={` p-[18px] bg-gray-light rounded-[14px] w-full text-base sm:text-lg font-neue text-primary`}
+                                className={`p-[18px] bg-gray-light rounded-[14px] w-full text-base sm:text-lg font-neue text-primary focus:outline-navbar-text focus:outline-[1px] ${errors.name && "border border-warning"}`}
                                 type='text'
                                 name='name'
                                 id='name'
-                                // value={values.name}
-                                // onChange={handleChange}
+                                value={values.name}
+                                onChange={handleChange}
                                 placeholder='Digite seu nome'
                             >
                             </input>
-                            {/* {errors.name && <div className='absolute right-1 top-[50%] -translate-y-1/2'><Image src="/assets/icons/general/warning.svg" width={16} height={16} alt='Error' /> </div>} */}
+                            {errors.name && <div className='absolute right-[18px] top-[50%] -translate-y-1/2'><Image src="/assets/icons/general/alert-triangle.svg" width={24} height={24} alt='Error' /> </div>}
                         </div>
 
-                        <div className='flex flex-col sm:flex-row items-start sm:items-center mb-6'>
+                        <div className='flex flex-col sm:flex-row items-start sm:items-center mb-6 relative'>
                             <div className='w-[214px] mr-7'>
                                 <p className='w-[214px] text-base sm:text-lg font-neue text-primary mb-3 lg:mb-0'>Email</p>
                             </div>
                             <input
-                                className={` p-[18px] bg-gray-light rounded-[14px] w-full text-base sm:text-lg font-neue text-primary`}
+                                className={` p-[18px] bg-gray-light rounded-[14px] w-full text-base sm:text-lg font-neue text-primary focus:outline-navbar-text focus:outline-[1px] ${errors.email && "border border-warning"}`}
                                 type='text'
-                                name='name'
-                                id='name'
-                                // value={values.name}
-                                // onChange={handleChange}
+                                name='email'
+                                id='email'
+                                value={values.email}
+                                onChange={handleChange}
                                 placeholder='Digite seu email'
                             >
                             </input>
-                            {/* {errors.name && <div className='absolute right-1 top-[50%] -translate-y-1/2'><Image src="/assets/icons/general/warning.svg" width={16} height={16} alt='Error' /> </div>} */}
+                            {errors.email && <div className='absolute right-[18px] top-[50%] -translate-y-1/2'><Image src="/assets/icons/general/alert-triangle.svg" width={24} height={24} alt='Error' /> </div>}
                         </div>
 
-                        <div className='flex flex-col sm:flex-row items-start sm:items-center mb-9'>
+                        <div className='flex flex-col sm:flex-row items-start sm:items-center mb-9 relative'>
                             <div className='w-[214px] mr-7'>
                                 <p className='w-[214px] text-base sm:text-lg font-neue text-primary mb-3 lg:mb-0'>Telefone</p>
                             </div>
                             <input
-                                className={` p-[18px] bg-gray-light rounded-[14px] w-full text-base sm:text-lg font-neue text-primary`}
+                                className={` p-[18px] bg-gray-light rounded-[14px] w-full text-base sm:text-lg font-neue text-primary focus:outline-navbar-text focus:outline-[1px] ${errors.phone && "border border-warning"}`}
                                 type='text'
-                                name='name'
-                                id='name'
-                                // value={values.name}
-                                // onChange={handleChange}
+                                name='phone'
+                                id='phone'
+                                value={values.phone}
+                                onChange={handleChange}
                                 placeholder='Digite seu telefone'
                             >
                             </input>
-                            {/* {errors.name && <div className='absolute right-1 top-[50%] -translate-y-1/2'><Image src="/assets/icons/general/warning.svg" width={16} height={16} alt='Error' /> </div>} */}
+                            {errors.phone && <div className='absolute right-[18px] top-[50%] -translate-y-1/2'><Image src="/assets/icons/general/alert-triangle.svg" width={24} height={24} alt='Error' /> </div>}
                         </div>
 
                         <div className='w-full h-[1px] bg-gray-light'></div>
 
                         <h1 className=' font-monument text-xl text-text-secondary mb-9 mt-9'>Solicitação</h1>
 
-                        <div className='flex flex-col sm:flex-row items-start sm:items-start mb-6'>
+                        <div className='flex flex-col sm:flex-row items-start sm:items-start mb-6 relative'>
                             <div className='w-[214px] mr-7'>
                                 <p className='w-[214px] text-base sm:text-lg font-neue text-primary mb-3 lg:mb-0'>Qual medicamento você está buscando?</p>
                             </div>
                             <textarea
-                                rows={3}
-                                className={` p-[18px] bg-gray-light rounded-[14px] w-full text-base sm:text-lg font-neue text-primary`}
+                                rows={4}
+                                className={` p-[18px] bg-gray-light rounded-[14px] w-full text-base sm:text-lg font-neue text-primary focus:outline-navbar-text focus:outline-[1px] ${errors.message && "border border-warning"}`}
                                 type='text'
-                                name='name'
-                                id='name'
-                                // value={values.name}
-                                // onChange={handleChange}
+                                name='message'
+                                id='message'
+                                value={values.message}
+                                onChange={handleChange}
                                 placeholder='Descreva sua solicitação'
                             >
                             </textarea>
-                            {/* {errors.name && <div className='absolute right-1 top-[50%] -translate-y-1/2'><Image src="/assets/icons/general/warning.svg" width={16} height={16} alt='Error' /> </div>} */}
+                            {errors.message && <div className='absolute right-[18px] top-[50%] -translate-y-1/2'><Image src="/assets/icons/general/alert-triangle.svg" width={24} height={24} alt='Error' /> </div>}
                         </div>
 
                         <div className='flex flex-col sm:flex-row items-start sm:items-center mb-16 '>
                             <div className='w-[214px] mr-7'>
                                 <p className='w-[214px] text-base sm:text-lg font-neue text-primary mb-3 lg:mb-0'>Receita médica</p>
                             </div>
-                            <DefaultButton href="" text="Anexar receita" style="btn-gray" />
+                            <div className='group'>
+                                <label className={`pb-[16px] pt-[14px] px-7 rounded-[18px] btn-gray w-fit flex flex-row flex-nowrap justify-center items-center cursor-pointer`}>
+                                    <input type='file' placeholder='teste' className='hidden' />
+                                    <h1 className='button-default font-neue-semibold text-base lg:text-lg pr-[10px]'>
+                                        Anexar receita
+                                    </h1>
+                                    <Image className={`group-hover:transition-all ease-out duration-500 group-hover:invert`} src="/assets/icons/general/chevron.svg" width="14" height="14" alt="Chevron Icon" />
+                                </label>
+                            </div>
                         </div>
 
                         <div className='flex flex-col lg:flex-row lg:items-center'>
                             <div className='max-w-[480px] lg:mr-7 mb-6 lg:mb-0'>
                                 <p className='content-secondary max-w-[480px] w-full'>Ao enviar este formulário, você concorda com a nossa <Link href="/politica-de-privacidade" className='underline text-text-accent hover:text-text-accent-hover ease-out duration-500 group-hover:transition-all group-hover:ease-out group-hover:duration-500'>Política de Privacidade</Link>.</p>
                             </div>
-                            <DefaultButton href="" text="Enviar" style="btn-black" icon="brightness-[2000%]" />
+                            <button className='whitespace-nowrap w-fit group' onClick={handlePress}>
+                                <div className={`pb-[16px] pt-[14px] px-7 rounded-[18px] btn-black w-fit flex flex-row flex-nowrap justify-center items-center`}>
+                                    <h1 className='button-default font-neue-semibold text-base lg:text-lg pr-[10px]'>
+                                        Enviar
+                                    </h1>
+                                    <Image className={`brightness-[2000%] group-hover:transition-all ease-out duration-500 group-hover:invert`} src="/assets/icons/general/chevron.svg" width="14" height="14" alt="Chevron Icon" />
+                                </div>
+                            </button>
                         </div>
 
                     </div>

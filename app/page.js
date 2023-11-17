@@ -55,39 +55,51 @@ const Home = () => {
         </section>
 
         <div className='absolute w-screen h-full top-0 right-0 flex justify-end items-end z-0' ref={ref}>
-          {inView ? ( <Globe /> ) : (null)}
+          {inView ?
+            (
+              <>
+                <Globe />
+              </>
+            ) :
+            (
+              null
+            )}
         </div>
 
         <section className=' pb-24 z-10'>
           <div className='container'>
             <div className='grid grid-cols-16'>
-              <div className='col-span-full lg:col-span-8 h-full bg-gradient-radial rounded-[28px] p-8 relative max-w-[610px]'>
-                <h1 className='content-primary text-base sm:text-lg pb-3'>Acesso global.</h1>
-                <p className='content-secondary text-base sm:text-lg max-w-[537px] pb-8'>Oferecemos fácil acesso  aos melhores medicamentos e laboratórios do mundo.</p>
-                <div className='grid grid-cols-8 gap-3 pb-12 sm:pb-0'>
-                  <div className='col-span-4 sm:col-span-3'>
-                    <Image src="/assets/main/client-01.svg" height={42} width={154} alt='Pfizer Logo' />
+              <Link href="/sobre" className='w-full group col-span-full lg:col-span-8'>
+                <div className='h-full bg-gradient-radial rounded-[28px] p-8 relative max-w-[610px] border border-white transition-all ease-out duration-500 hover:transition-all hover:ease-out hover:duration-500 hover:shadow-lg'>
+                  <h1 className='content-primary text-base sm:text-lg pb-3'>Acesso global.</h1>
+                  <p className='content-secondary text-base sm:text-lg max-w-[537px] pb-8'>Oferecemos fácil acesso  aos melhores medicamentos e laboratórios do mundo.</p>
+                  <div className='grid grid-cols-8 gap-3 pb-12 sm:pb-0'>
+                    <div className='col-span-4 sm:col-span-3'>
+                      <Image src="/assets/main/client-01.svg" height={42} width={154} alt='Pfizer Logo' />
+                    </div>
+                    <div className='col-span-4 sm:col-span-3'>
+                      <Image src="/assets/main/client-02.svg" height={42} width={154} alt='Kyowa Kirin Logo' />
+                    </div>
+                    <div className='col-span-4 sm:col-span-3 sm:col-start-3'>
+                      <Image src="/assets/main/client-03.svg" height={42} width={154} alt='Bristol Myers Logo' />
+                    </div>
+                    <div className='col-span-4 sm:col-span-3'>
+                      <Image src="/assets/main/client-04.svg" height={42} width={154} alt='AstraZeneca Logo' />
+                    </div>
+                    <div className='col-span-4 sm:col-span-3'>
+                      <Image src="/assets/main/client-05.svg" height={42} width={154} alt='Roche Logo' />
+                    </div>
+                    <div className='col-span-4 sm:col-span-3'>
+                      <Image src="/assets/main/client-06.svg" height={42} width={154} alt='Janssen Logo' />
+                    </div>
                   </div>
-                  <div className='col-span-4 sm:col-span-3'>
-                    <Image src="/assets/main/client-02.svg" height={42} width={154} alt='Kyowa Kirin Logo' />
-                  </div>
-                  <div className='col-span-4 sm:col-span-3 sm:col-start-3'>
-                    <Image src="/assets/main/client-03.svg" height={42} width={154} alt='Bristol Myers Logo' />
-                  </div>
-                  <div className='col-span-4 sm:col-span-3'>
-                    <Image src="/assets/main/client-04.svg" height={42} width={154} alt='AstraZeneca Logo' />
-                  </div>
-                  <div className='col-span-4 sm:col-span-3'>
-                    <Image src="/assets/main/client-05.svg" height={42} width={154} alt='Roche Logo' />
-                  </div>
-                  <div className='col-span-4 sm:col-span-3'>
-                    <Image src="/assets/main/client-06.svg" height={42} width={154} alt='Janssen Logo' />
+                  <div className='absolute right-8 bottom-8'>
+                    <div className={`py-[8px] px-[14px] rounded-[18px] w-fit flex flex-row flex-nowrap justify-center items-center bg-text-primary border border-gray-lighter group-hover:drop-shadow-[0_5px_15px_rgba(121,128,151,0.35)] group-hover:border-white group-hover:transition-all group-hover:ease-out group-hover:duration-500 group-hover:bg-gradient-radial group-hover:drop-shadow-[0_5px_15px_rgba(121,128,151,0.35) transition-all ease-out duration-500`}>
+                      <Image className="brightness-[2000%] group-hover:invert group-hover:transition-all group-hover:ease-out group-hover:duration-500 transition-all ease-out duration-500" src="/assets/icons/general/chevron.svg" width="14" height="14" alt="Chevron icon" />
+                    </div>
                   </div>
                 </div>
-                <div className='absolute right-8 bottom-8'>
-                  <ChevronPill href="/sobre" />
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>
@@ -104,7 +116,7 @@ const Home = () => {
           </div>
           <div className='grid grid-cols-16'>
             <div className='col-span-full lg:col-span-11 lg:col-start-6 pb-6'>
-              <div className='px-[18px] md:px-[76px] md:py-20 py-[46px] bg-gradient-radial rounded-[28px]'>
+              <div className='px-[18px] md:px-[76px] md:py-20 py-[46px] bg-gradient-radial rounded-[28px] border border-white'>
                 <Accordion />
               </div>
             </div>
@@ -175,7 +187,7 @@ const Home = () => {
                 <p className='content-secondary text-base sm:text-lg mb-[14px]'>Acompanhe a Kemmi</p>
                 <div className='flex flex-row'>
                   {generalData.darkLinks.map((i) => (
-                    <a target='_blank' href={i.href} className='mr-4 hover:brightness-[300%] ease-out duration-500 hover:transition-all hover:ease-out hover:duration-500'>
+                    <a target='_blank' href={i.href} className='mr-4 hover:brightness-[300%] ease-out duration-500 hover:transition-all hover:ease-out hover:duration-500' key={i.id}>
                       <Image
                         src={i.image}
                         alt={`${i.name} Social Media Icon`}

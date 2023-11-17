@@ -17,12 +17,13 @@ const Sobre = () => {
     return (
         <Animation>
             {/* INTRO */}
-            <section className='relative min-h-screen w-full bg-bg-color-0'>
-                <div className='container pt-60 pb-16'>
+            <section className='relative min-h-screen w-full bg-bg-color-0 pt-[106px]'>
+                <div className='container flex justify-center items-center min-h-[100vh]'>
                     <div className='grid grid-cols-16 gap-3'>
                         <div className='col-span-full lg:col-span-8 flex flex-col h-full justify-end lg:pb-[200px]'>
                             <p className=' text-xs sm:text-sm content-subtitle pb-6'>SOBRE</p>
-                            <h1 className=' content-primary text-xl sm:text-2xl pb-6'>Somos um portal de importação de medicamentos não registrados no Brasil.</h1>
+                            <h1 className=' content-primary text-xl sm:text-2xl pb-14'>Somos um portal de importação de medicamentos não registrados no Brasil.</h1>
+                            <DefaultButton href="" text="Como importamos" style="btn-gray" />
                         </div>
                         <div className='col-span-full lg:col-span-8'>
                             <div className="grid grid-cols-8 gap-3">
@@ -43,20 +44,28 @@ const Sobre = () => {
             <section className='bg-bg-color-0 pb-24'>
                 <div className='container'>
                     <div className='grid grid-cols-16 gap-3 pb-3'>
-                        <div className='col-span-full lg:col-span-8 h-[400px] lg:h-[340px] bg-gradient-radial rounded-[28px] p-8 relative'>
-                            <h1 className='content-primary text-md sm:text-lg pb-3'>Importação global</h1>
-                            <p className='content-secondary text-md sm:text-lg max-w-[537px] pb-8'>Ecossistema completo para adquirir medicamentos especiais com agilidade e segurança do EUA, Europa ou qualquer local do mundo.</p>
-                            <div className='absolute right-8 bottom-8'>
-                                <ChevronPill href="/sobre#quem-somos" />
+                        <Link href="/sobre#quem-somos" className='col-span-full lg:col-span-8 group' >
+                            <div className='h-[400px] lg:h-[340px] bg-gradient-radial rounded-[28px] p-8 relative group-hover:shadow-lg transition-all ease-out duration-500group-hover:transition-all group-hover:ease-out group-hover:duration-500 border border-white'>
+                                <h1 className='content-primary text-md sm:text-lg pb-3'>Importação global</h1>
+                                <p className='content-secondary text-md sm:text-lg max-w-[537px] pb-8'>Ecossistema completo para adquirir medicamentos especiais com agilidade e segurança do EUA, Europa ou qualquer local do mundo.</p>
+                                <div className='absolute right-8 bottom-8'>
+                                    <div className={`py-[8px] px-[14px] rounded-[18px] w-fit flex flex-row flex-nowrap justify-center items-center bg-text-primary border border-gray-lighter group-hover:drop-shadow-[0_5px_15px_rgba(121,128,151,0.35)] group-hover:border-white group-hover:transition-all group-hover:ease-out group-hover:duration-500 group-hover:bg-gradient-radial group-hover:drop-shadow-[0_5px_15px_rgba(121,128,151,0.35) transition-all ease-out duration-500`}>
+                                        <Image className="brightness-[2000%] group-hover:invert group-hover:transition-all group-hover:ease-out group-hover:duration-500 transition-all ease-out duration-500" src="/assets/icons/general/chevron.svg" width="14" height="14" alt="Chevron icon" />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='col-span-full lg:col-span-8 h-[400px] lg:h-[340px] bg-gradient-radial rounded-[28px] p-8 relative'>
-                            <h1 className='content-primary text-md sm:text-lg pb-3'>Regulamentação</h1>
-                            <p className='content-secondary text-md sm:text-lg max-w-[537px] pb-8'>Seguimos com todas as regulamentações e exigências impostas pela Anvisa e legislação vigente (RDC 488/2021)</p>
-                            <div className='absolute right-8 bottom-8'>
-                                <ChevronPill href="/sobre#regulamentacao" />
+                        </Link>
+                        <Link href="/sobre#regulamentacao" className='col-span-full lg:col-span-8 group' >
+                            <div className='col-span-full lg:col-span-8 h-[400px] lg:h-[340px] bg-gradient-radial rounded-[28px] p-8 relative group-hover:shadow-lg transition-all ease-out duration-500group-hover:transition-all group-hover:ease-out group-hover:duration-500 border border-white'>
+                                <h1 className='content-primary text-md sm:text-lg pb-3'>Regulamentação</h1>
+                                <p className='content-secondary text-md sm:text-lg max-w-[537px] pb-8'>Seguimos com todas as regulamentações e exigências impostas pela Anvisa e legislação vigente (RDC 488/2021)</p>
+                                <div className='absolute right-8 bottom-8'>
+                                    <div className={`py-[8px] px-[14px] rounded-[18px] w-fit flex flex-row flex-nowrap justify-center items-center bg-text-primary border border-gray-lighter group-hover:drop-shadow-[0_5px_15px_rgba(121,128,151,0.35)] group-hover:border-white group-hover:transition-all group-hover:ease-out group-hover:duration-500 group-hover:bg-gradient-radial group-hover:drop-shadow-[0_5px_15px_rgba(121,128,151,0.35) transition-all ease-out duration-500`}>
+                                        <Image className="brightness-[2000%] group-hover:invert group-hover:transition-all group-hover:ease-out group-hover:duration-500 transition-all ease-out duration-500" src="/assets/icons/general/chevron.svg" width="14" height="14" alt="Chevron icon" />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                         <div className='lg:col-start-3 col-span-full'>
                             <CTA />
                         </div>
@@ -124,7 +133,7 @@ const Sobre = () => {
                                 </div>
                                 <div className='grid grid-cols-16'>
                                     <div className='col-span-full lg:col-span-11 lg:col-start-6 pb-40'>
-                                        <div className='px-[18px] md:px-[76px] md:py-20 py-[46px] bg-gradient-radial-inverted rounded-[28px]'>
+                                        <div className='px-[18px] md:px-[76px] md:py-20 py-[46px] bg-gradient-radial-inverted rounded-[28px] border border-[#e9ecee]'>
                                             <Accordion />
                                         </div>
                                     </div>
@@ -147,7 +156,7 @@ const Sobre = () => {
                             <p className='content-secondary text-md sm:text-lg pb-7'>Nossos especialistas estão prontos para te ajudar.</p>
                             <div className='flex flex-row mb-10'>
                                 {generalData.darkLinks.map((i) => (
-                                    <a target='_blank' href={i.href} className='mr-4 hover:brightness-[300%] ease-out duration-500 group-hover:transition-all group-hover:ease-out group-hover:duration-500'>
+                                    <a key={i.id} target='_blank' href={i.href} className='mr-4 hover:brightness-[300%] ease-out duration-500 group-hover:transition-all group-hover:ease-out group-hover:duration-500'>
                                         <Image
                                             src={i.image}
                                             alt={`${i.name} Social Media Icon`}

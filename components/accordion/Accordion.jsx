@@ -20,7 +20,7 @@ const AccordionCard = ({ i, expanded, setImage, setExpanded, children, ...props 
                     className="w-full cursor-pointer flex flex-row items-center"
                 >
                     <div className={` px-[10px] py-2 md:py-3 md:px-[14px] rounded-full h-fit flex justify-center items-center mr-2 md:mr-5 w-fit mb-3 md:mb-0 transition-all ease-out duration-200 ${isOpen ? "bg-text-primary" : "bg-white"}`}>
-                        <p className={`font-monument leading-[100%] transition-all ease-out duration-200 ${isOpen ? "text-white" : "text-text-secondary"} pt-[4px]`}>
+                        <p className={`font-monument text-[10px] md:text-sm leading-[100%] transition-all ease-out duration-200 ${isOpen ? "text-white" : "text-text-secondary"} pt-[4px]`}>
                             {props.number}
                         </p>
                     </div>
@@ -58,7 +58,7 @@ const AccordionCard = ({ i, expanded, setImage, setExpanded, children, ...props 
 }
 const accordionData = [
     {
-        id: 0,
+        id: 1,
         number: "01.",
         title: "Solicitação",
         text: <span><Link href="/#contact-form" className="underline text-text-accent hover:text-text-accent-hover ease-out duration-500 group-hover:transition-all group-hover:ease-out group-hover:duration-500">Preencha o formulário</Link> para receber uma cotação atualizada de seus medicamentos.</span>,

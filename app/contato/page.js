@@ -19,7 +19,7 @@ const page = () => {
                             <p className='content-secondary text-md sm:text-lg pb-7'>Nossos especialistas estão prontos para te ajudar.</p>
                             <div className='flex flex-row mb-10 lg:mb-0'>
                                 {generalData.darkLinks.map((i) => (
-                                    <a target='_blank' href={i.href} className='mr-4 hover:brightness-[300%] ease-out duration-500 group-hover:transition-all group-hover:ease-out group-hover:duration-500'>
+                                    <a key={i.id} target='_blank' href={i.href} className='mr-4 hover:brightness-[300%] ease-out duration-500 group-hover:transition-all group-hover:ease-out group-hover:duration-500'>
                                         <Image
                                             src={i.image}
                                             alt={`${i.name} Social Media Icon`}
