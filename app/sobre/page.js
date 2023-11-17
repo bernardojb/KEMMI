@@ -23,7 +23,7 @@ const Sobre = () => {
                         <div className='col-span-full lg:col-span-8 flex flex-col h-full justify-end lg:pb-[200px]'>
                             <p className=' text-xs sm:text-sm content-subtitle pb-6'>SOBRE</p>
                             <h1 className=' content-primary text-xl sm:text-2xl pb-14'>Somos um portal de importação de medicamentos não registrados no Brasil.</h1>
-                            <DefaultButton href="" text="Como importamos" style="btn-gray" />
+                            <DefaultButton href="/sobre#como-importamos" text="Como importamos" style="btn-gray" />
                         </div>
                         <div className='col-span-full lg:col-span-8'>
                             <div className="grid grid-cols-8 gap-3">
@@ -101,7 +101,7 @@ const Sobre = () => {
                                 </div>
                             </div>
 
-                            <div className='container pt-32 pb-32' id='regulamentacao'>
+                            <div className='container pt-32' id='regulamentacao'>
                                 <div className='grid grid-cols-16 gap-3 pb-24'>
                                     <div className='col-span-full lg:col-span-9'>
                                         <h1 className=' content-primary text-xl sm:text-2xl pb-6'>Eficiência em importação <br></br> de medicamentos e produtos para saúde.</h1>
@@ -121,7 +121,7 @@ const Sobre = () => {
                                 </div>
                             </div>
 
-                            <div className='container'>
+                            <div className='container pt-32' id="como-importamos">
                                 <div className='pb-14'>
                                     <div className='grid grid-cols-16'>
                                         <div className='col-span-full lg:col-span-9'>

@@ -40,7 +40,7 @@ const ContactForm = () => {
                     </div>
 
                     <div className='col-span-16 lg:col-start-7 lg:col-span-full rounded-[28px] bg-gradient-radial px-6 py-10 lg:px-12 lg:py-16 border border-white shadow-sm'>
-                        {/* <>
+                        <>
                             <h1 className=' font-monument text-xl text-text-secondary mb-9'>Informações pessoais</h1>
 
                             <div className='flex flex-col sm:flex-row items-start sm:items-center mb-6 relative'>
@@ -144,7 +144,7 @@ const ContactForm = () => {
                                     </div>
                                 </button>
                             </div>
-                        </> */}
+                        </>
                     </div>
                 </div>
             </div>

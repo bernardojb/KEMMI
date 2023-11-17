@@ -58,7 +58,7 @@ const AccordionCard = ({ i, expanded, setImage, setExpanded, children, ...props 
 }
 const accordionData = [
     {
-        id: 1,
+        id: 0,
         number: "01.",
         title: "Solicitação",
         text: <span><Link href="/#contact-form" className="underline text-text-accent hover:text-text-accent-hover ease-out duration-500 group-hover:transition-all group-hover:ease-out group-hover:duration-500">Preencha o formulário</Link> para receber uma cotação atualizada de seus medicamentos.</span>,
