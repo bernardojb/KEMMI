@@ -17,10 +17,10 @@ const Sobre = () => {
     return (
         <Animation>
             {/* INTRO */}
-            <section className='relative min-h-screen w-full bg-bg-color-0 pt-[106px]'>
+            <section className='relative min-h-screen w-full bg-bg-color-0 pt-[106px] pb-44 sm:pb-48 '>
                 <div className='container flex justify-center items-center min-h-[100vh]'>
                     <div className='grid grid-cols-16 gap-3'>
-                        <div className='col-span-full lg:col-span-8 flex flex-col h-full justify-end lg:pb-[200px]'>
+                        <div className='col-span-full lg:col-span-8 flex flex-col h-full justify-end pb-44 lg:pb-[200px]'>
                             <p className=' text-xs sm:text-sm content-subtitle pb-6'>SOBRE</p>
                             <h1 className=' content-primary text-xl sm:text-2xl pb-14'>Somos um portal de importação de medicamentos não registrados no Brasil.</h1>
                             <DefaultButton href="/sobre#como-importamos" text="Como importamos" style="btn-gray" />
@@ -33,8 +33,8 @@ const Sobre = () => {
                                         <p className='max-w-[350px] content-secondary text-base'>Seguimos todas regulamentações e exigências da ANVISA.</p>
                                     </div>
                                 </div>
-                                <div className='h-[373px] w-full rounded-[28px] bg-cover bg-left-bottom bg-no-repeat bg-about-k col-span-5'></div>
-                                <div className='h-[605px] w-full rounded-[28px] bg-cover bg-left-bottom bg-no-repeat bg-about-image-3 col-span-3'></div>
+                                <div className='h-[373px] w-full rounded-[28px] bg-cover bg-left-bottom bg-no-repeat bg-about-k col-span-full sm:col-span-5'></div>
+                                <div className='h-[605px] w-full rounded-[28px] bg-cover bg-left-bottom bg-no-repeat bg-about-image-3 col-span-full sm:col-span-3'></div>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ const Sobre = () => {
                     <div className='grid grid-cols-16'>
                         <div className='col-span-16 sm:col-start-2'>
 
-                            <div className='container pt-40' id="quem-somos">
+                            <div className='container pt-24 sm:pt-40' id="quem-somos">
                                 <div className='grid grid-cols-16 pb-20 '>
                                     <div className='col-span-full lg:col-span-9'>
                                         <p className=' text-xs sm:text-sm content-subtitle pb-6'>QUEM SOMOS</p>
@@ -101,7 +101,7 @@ const Sobre = () => {
                                 </div>
                             </div>
 
-                            <div className='container pt-32' id='regulamentacao'>
+                            <div className='container pt-44 sm:pt-32' id='regulamentacao'>
                                 <div className='grid grid-cols-16 gap-3 pb-24'>
                                     <div className='col-span-full lg:col-span-9'>
                                         <h1 className=' content-primary text-xl sm:text-2xl pb-6'>Eficiência em importação <br></br> de medicamentos e produtos para saúde.</h1>
@@ -121,7 +121,7 @@ const Sobre = () => {
                                 </div>
                             </div>
 
-                            <div className='container pt-32' id="como-importamos">
+                            <div className='container pt-44 sm:pt-32' id="como-importamos">
                                 <div className='pb-14'>
                                     <div className='grid grid-cols-16'>
                                         <div className='col-span-full lg:col-span-9'>
