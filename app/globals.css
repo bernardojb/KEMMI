@@ -32,7 +32,9 @@ button,
 textarea,
 input,
 select,
-a {
+a,
+header
+ {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
