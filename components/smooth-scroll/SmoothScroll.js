@@ -11,9 +11,9 @@ const SmoothScroll = ({ children }) => {
         scrollRef.current = new Lenis({
             duration: 0.6,
             easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-            direction: "vertical",
-            gestureDirection: "vertical",
-            smooth: true,
+            orientation: "vertical",
+            gestureOrientation: "vertical",
+            smoothWheel: true,
             smoothTouch: false,
             touchMultiplier: 2,
             infinite: false

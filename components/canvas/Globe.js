@@ -9,20 +9,10 @@ let globe
 
 export default function Globe() {
     const canvasRef = useRef();
-
-    // useEffect(() => {
-    //     const screen = window.innerWidth
-
-    //     addEventListener("resize", (event) => { console.log(event) });
-
-    //     onresize = (event) => { console.log(event) };
-    // })
-
     useEffect(() => {
         let width = 0;
         const onResize = () => {
             canvasRef.current && (width = canvasRef.current.offsetWidth)
-            console.log(width)
         }
         window.addEventListener('resize', onResize)
 
@@ -44,7 +34,7 @@ export default function Globe() {
             markerColor: [0, 1, 0.8],
             glowColor: [1, 1, 1],
             opacity: 0.9,
-            scale: width < 750 ? 0.7 : 1 ,
+            scale: width < 750 ? 0.7 : 1,
             markers: [
                 // longitude latitude
                 { location: [40.75030307139222, -73.97266663185377], size: 0.1 }, //PFIZER NY,
@@ -61,7 +51,8 @@ export default function Globe() {
                 { location: [10.774235974345606, 106.7049042559173], size: 0.1 }, //roche
 
             ],
-            offset: [ width < 750 ? -500 : 500, 0],
+            scale: width < 750 ? 0.6 : 1,
+            offset: [width < 750 ? -400 : 500, 0],
             onRender: (state) => {
                 // Called on every animation frame.
                 // `state` will be an empty object, return updated params.

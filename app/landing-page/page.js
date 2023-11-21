@@ -64,6 +64,7 @@ export default function Home() {
           height={200}
           width={200}
           alt="Kemmi Logo"
+          priority
         />
       </div>
 

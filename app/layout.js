@@ -26,6 +26,7 @@ export const metadata = {
   publisher: 'hokup',
   themeColor: metaData.themeColor,
 
+  metadataBase: new URL('https://kemmifarma.com'),
   //Open Graph
   openGraph: {
     title: metaData.title,

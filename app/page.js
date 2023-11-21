@@ -34,7 +34,7 @@ const Home = () => {
       }
       } /> */}
       <div className='relative bg-bg-color-0 '>
-        <section className='relative min-h-screen w-full  z-10'>
+        <section className='relative min-h-screen w-full z-10'>
           <div className='container pt-[20px]'>
             <div className='grid grid-cols-16 min-h-[768px] h-[100vh] gap-3'>
               <div className=' col-span-full lg:col-span-10 flex flex-col h-full justify-center'>
@@ -66,7 +66,7 @@ const Home = () => {
             )}
         </div>
 
-        <section className=' pb-24 z-10'>
+        <section className='pb-44 lg:pb-24 z-10'>
           <div className='container'>
             <div className='grid grid-cols-16'>
               <Link href="/sobre" className='w-full group col-span-full lg:col-span-8'>
@@ -103,12 +103,9 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-
-
       </div>
 
-      <section className='bg-bg-color-0 pb-40'>
+      <section className='bg-bg-color-0 pb-44 lg:pb-40'>
         <div className='container'>
           <div className='pb-14 w-full lg:w-13/16 '>
             <p className='content-subtitle text-xs sm:text-sm pb-6'>ETAPAS DA IMPORTAÇÃO</p>
@@ -130,7 +127,7 @@ const Home = () => {
       <section className='bg-bg-color-0'>
         <div className=' rounded-[28px] sm:rounded-[60px] bg-white mx-3'>
 
-          <div className='container pb-32'>
+          <div className='container pb-44 lg:pb-32'>
             <div className=' pt-[13px] sm:pt-40 grid grid-cols-16 relative h-[1000px] sm:h-[1160px]'>
 
               <div className='col-span-full sm:col-span-12 rounded-[28px] sm:rounded-[48px] bg-card-bg px-[18px] py-14 sm:px-20 sm:py-20 h-fit sm:mt-[90px] z-10 mb-3 sm:mb-0 backdrop-blur-[30px]'>
@@ -160,7 +157,7 @@ const Home = () => {
 
           </div>
 
-          <div className='container pb-32'>
+          <div className='container pb-44 lg:pb-32'>
             <p className=' text-xs sm:text-sm content-subtitle pb-6'>PRODUTOS</p>
             <h1 className=' content-primary text-xl lg:text-2xl pb-12'>Medicamentos mais solicitados</h1>
             <div className='overflow-x-hidden'>

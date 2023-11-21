@@ -17,16 +17,16 @@ const AccordionCard = ({ i, expanded, setImage, setExpanded, children, ...props 
                         setExpanded(isOpen ? false : i)
                     }
                     }
-                    className="w-full cursor-pointer flex flex-row items-center"
+                    className="cursor-pointer flex flex-row items-center group w-fit"
                 >
                     <div className={` px-[10px] py-2 md:py-3 md:px-[14px] rounded-full h-fit flex justify-center items-center mr-2 md:mr-5 w-fit mb-3 md:mb-0 transition-all ease-out duration-200 ${isOpen ? "bg-text-primary" : "bg-white"}`}>
                         <p className={`font-monument text-[10px] md:text-sm leading-[100%] transition-all ease-out duration-200 ${isOpen ? "text-white" : "text-text-secondary"} pt-[4px]`}>
                             {props.number}
                         </p>
                     </div>
-                    <h1 className={`font-monument text-xl md:text-2xl hover:transition-colors hover:duration-500 duration-500 transition-colors ease-out ${isOpen ? "text-text-primary" : "text-text-secondary"}`}>{props.title}</h1>
+                    <h1 className={`font-monument text-xl md:text-2xl hover:transition-colors hover:duration-500 duration-500 transition-colors ease-out group-hover:text-text-primary ${isOpen ? "text-text-primary" : "text-text-secondary"}`}>{props.title}</h1>
                 </motion.header>
-                <AnimatePresence initial={false}>
+                <AnimatePresence>
                     {isOpen && (
                         <motion.section
                             key="content"

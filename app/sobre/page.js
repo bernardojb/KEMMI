@@ -17,7 +17,7 @@ const Sobre = () => {
     return (
         <Animation>
             {/* INTRO */}
-            <section className='relative min-h-screen w-full bg-bg-color-0 pt-[106px] pb-44 sm:pb-48 '>
+            <section className='relative min-h-screen w-full bg-bg-color-0 pt-64 lg:pt-[106px] pb-44 sm:pb-48 '>
                 <div className='container flex justify-center items-center min-h-[100vh]'>
                     <div className='grid grid-cols-16 gap-3'>
                         <div className='col-span-full lg:col-span-8 flex flex-col h-full justify-end pb-44 lg:pb-[200px]'>
@@ -33,8 +33,8 @@ const Sobre = () => {
                                         <p className='max-w-[350px] content-secondary text-base'>Seguimos todas regulamentações e exigências da ANVISA.</p>
                                     </div>
                                 </div>
-                                <div className='h-[373px] w-full rounded-[28px] bg-cover bg-left-bottom bg-no-repeat bg-about-k col-span-full sm:col-span-5'></div>
-                                <div className='h-[605px] w-full rounded-[28px] bg-cover bg-left-bottom bg-no-repeat bg-about-image-3 col-span-full sm:col-span-3'></div>
+                                <div className=' sm:ml-auto min-h-[300px] sm:h-[373px] max-w-[320px] w-full rounded-[28px] bg-cover bg-left-bottom bg-no-repeat bg-about-k col-span-full sm:col-span-5'></div>
+                                <div className=' min-h-[558px] sm:h-[605px] w-full rounded-[28px] bg-cover center bg-no-repeat bg-about-image-3 col-span-full sm:col-span-3'></div>
                             </div>
                         </div>
                     </div>

@@ -70,12 +70,6 @@ const Politica = () => {
                         
                         Kemmi - Sua confiança é nossa prioridade."
                     />
-
-
-                    {/* <div className='flex flex-row pt-10 items-center'>
-                        <Image className="mr-6 lg:mr-10" src="/assets/main/main-logo-icon.svg" height={50} width={50} />
-                        <p className='text-xs text-gray max-w-[260px]'> {generalData.slogan} © {new Date().getFullYear()} {generalData.name}.</p>
-                    </div> */}
                 </div>
             </section>
         </Animation>

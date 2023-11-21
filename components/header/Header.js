@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import MenuToggle from './Toggle'
 import Link from 'next/link'
 import { generalData } from '@/data/general-data'
@@ -32,7 +32,8 @@ export default function Header() {
       transition: {
         type: 'spring',
         bounce: 0.2,
-        duration: 0.6
+        duration: 0.6,
+        delay:0.1
       }
     }
   }
@@ -76,7 +77,7 @@ export default function Header() {
   }
 
   return (
-    <>
+    <AnimatePresence mode='wait'  >
       <motion.div
         className={`z-[999] w-screen fixed flex flex-col min-h-[80px]`}
         animate={toggle ? "open" : "closed"}
@@ -92,12 +93,22 @@ export default function Header() {
                 width={153}
                 height={42}
                 className='w-full h-full'
+                priority
               />
             </a>
           </div>
 
           <div className={`px-3 py-2 mt-3 flex items-center flex-row mx-auto rounded-full w-full bg-navbar-gradient`}>
             {/* Logo */}
+            {/* <Link href="/">
+              Home
+            </Link>
+            <Link href="/sobre">
+              Sobre
+            </Link>
+            <Link href="/contato">
+              Contato
+            </Link> */}
             <Link href="/contato" className='hidden sm:flex ml-auto group' onClick={() => setToggle(false)} >
               <div className='
               bg-gray-light-solid 
@@ -182,7 +193,7 @@ export default function Header() {
           >
             <div className='flex flex-row mb-[14px] '>
               {generalData.darkLinks.map((i) => (
-                <a target='_blank' href={i.href} className='mr-4 z-10'>
+                <a target='_blank' href={i.href} className='mr-4 z-10' key={i.id}>
                   <Image
                     src={i.image}
                     alt={`${i.name} Social Media Icon`}
@@ -205,7 +216,7 @@ export default function Header() {
           </motion.div>
         </div>
       </motion.div>
-    </>
+    </AnimatePresence>
   )
 }
 
