@@ -125,12 +125,12 @@ const Home = () => {
       </section>
 
       <section className='bg-bg-color-0'>
-        <div className=' rounded-[28px] sm:rounded-[60px] bg-white mx-3'>
+        <div className=' rounded-[38px] sm:rounded-[60px] bg-white mx-3'>
 
           <div className='container pb-44 lg:pb-32'>
             <div className=' pt-[10px] sm:pt-40 grid grid-cols-16 relative h-[1000px] sm:h-[1160px]'>
 
-              <div className='col-span-full sm:col-span-12 rounded-[28px] sm:rounded-[38px] bg-card-bg px-[18px] py-14 sm:px-20 sm:py-20 h-fit sm:mt-[90px] z-10 mb-3 sm:mb-0 backdrop-blur-[30px]'>
+              <div className='col-span-full sm:col-span-12 rounded-[28px] sm:rounded-[28px] bg-card-bg px-[18px] py-14 sm:px-20 sm:py-20 h-fit sm:mt-[90px] z-10 mb-3 sm:mb-0 backdrop-blur-[30px]'>
                 <p className=' text-xs sm:text-sm content-subtitle pb-6'>QUEM SOMOS</p>
                 <h1 className=' content-primary text-lg lg:text-2xl pb-6 break-words'>Somos uma empresa que ajuda você a importar medicamentos especiais.</h1>
                 <p className='content-secondary text-base lg:text-lg pb-14'>Oferecemos um atendimento ágil e cuidamos da sua saúde através da importação inteligente.</p>
