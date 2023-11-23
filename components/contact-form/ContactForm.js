@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import validate from '@/app/contato/validateInfo';
 import useForm from '@/app/contato/useForm';
 import Image from 'next/image';
@@ -16,6 +16,26 @@ const ContactForm = () => {
 
     const { isSubmitting, handleChange, values, handlePress, errors, setValues, isLoading, setSubmitting } =
         useForm(validate);
+
+        const [fileName, setFileName] = useState("Anexar receita")
+        const [selected, setSelected] = useState("")
+
+        function displayFileName() {
+            // Get the file input element
+            var fileInput = document.getElementById('fileInput');
+
+            // Get the selected file
+            const selectedFile = fileInput.files[0];
+
+            // Display the file name
+            if (selectedFile) {
+                setFileName(selectedFile.name);
+                setSelected("rotate-[45deg]")
+            } else {
+                setFileName("Anexar receita")
+                setSelected("")
+            }
+        }
 
     return (
         <section className='bg-bg-color-0 py-40' id="contact-form">
@@ -134,11 +154,11 @@ const ContactForm = () => {
                                     </div>
                                     <div className='group'>
                                         <label className={`pb-[16px] pt-[14px] px-7 rounded-[18px] btn-gray w-fit flex flex-row flex-nowrap justify-center items-center cursor-pointer`}>
-                                            <input type='file' placeholder='teste' className='hidden' />
+                                            <input  id="fileInput" type='file' placeholder='teste' className='hidden' onChange={ () => displayFileName()} />
                                             <h1 className='button-default font-neue-semibold text-base lg:text-lg pr-[10px]'>
-                                                Anexar receita
+                                                {fileName}
                                             </h1>
-                                            <Image className={`group-hover:transition-all ease-out duration-500 group-hover:invert`} src="/assets/icons/general/chevron.svg" width="14" height="14" alt="Chevron Icon" />
+                                            <Image className={`${selected} group-hover:transition-all ease-out duration-500 group-hover:invert`} src="/assets/icons/general/plus.svg" width="14" height="14" alt="Adicionar arquivo" />
                                         </label>
                                     </div>
                                 </div>
