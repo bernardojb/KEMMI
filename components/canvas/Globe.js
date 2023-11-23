@@ -54,18 +54,18 @@ export default function Globe() {
             glowColor: [1, 1, 1],
             markers: [
                 // longitude latitude
-                { location: [40.75030307139222, -73.97266663185377], size: 0.1 }, //PFIZER NY,
-                { location: [-23.629269814654965, -46.70806227116496], size: 0.05 }, //PFIZER BRASIL
-                // { location: [40.644611312393806, -74.64021687239416], size: 0.05 }, //KYOWA KIRIN
-                // { location: [48.7245758181629, -74.37946693248628], size: 0.08 }, //BRYSTOL
-                // { location: [33.12537009482279, -95.23305487283119], size: 0.1 }, //ASTRAZENECA
-                // { location: [-23.597333228111566, -46.86411201183329], size: 0.05 }, //ASTRAZENECA BRASIL
-                // { location: [43.606758512694896, -79.7527824927525], size: 0.08 }, //roche
-                // { location: [43.606758512694896, -79.7527824927525], size: 0.05 }, //roche
-                // { location: [45.32651171528461, 14.444021864455495], size: 0.1 }, //roche
-                // { location: [21.555842178164095, 39.16580415586747], size: 0.08 }, //roche
-                // { location: [24.471592072971443, 54.346498385696485], size: 0.05 }, //roche
-                // { location: [10.774235974345606, 106.7049042559173], size: 0.08 }, //roche
+                { location: [40.75, -73.97], size: 0.1 }, //PFIZER NY,
+                { location: [-23.62, -46.70], size: 0.05 }, //PFIZER BRASIL
+                { location: [40.64, -74.64], size: 0.05 }, //KYOWA KIRIN
+                { location: [48.72, -74.37], size: 0.08 }, //BRYSTOL
+                { location: [33.12, -95.23], size: 0.1 }, //ASTRAZENECA
+                { location: [-23.59, -46.86], size: 0.05 }, //ASTRAZENECA BRASIL
+                { location: [43.60, -79.75], size: 0.08 }, //roche
+                { location: [43.60, -79.75], size: 0.05 }, //roche
+                { location: [45.32, 14.44], size: 0.1 }, //roche
+                { location: [21.55, 39.16], size: 0.08 }, //roche
+                { location: [24.47, 54.34], size: 0.05 }, //roche
+                { location: [10.77, 106.70], size: 0.08 }, //roche
 
             ],
             scale: width < 750 ? 0.6 : 1,
