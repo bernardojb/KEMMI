@@ -9,9 +9,9 @@ let globe
 export default function Globe() {
     const canvasRef = useRef();
 
-    const stats = new Stats()
-    stats.showPanel(0) // 0: fps, 1: ms, 2: mb, 3+: custom
-    document.body.appendChild(stats.dom)
+    // const stats = new Stats()
+    // stats.showPanel(0) // 0: fps, 1: ms, 2: mb, 3+: custom
+    // document.body.appendChild(stats.dom)
 
     useEffect(() => {
         let width = 0;
@@ -29,15 +29,15 @@ export default function Globe() {
             width: 600* 2 ,
             height: 600* 2 ,
             phi: 0,
-            theta: 0.2,
+            theta: 0.1,
             dark: 0,
-            diffuse: 1.5,
+            diffuse: 2.5,
             mapSamples: 9000,
             mapBrightness: 2,
-            baseColor: [0.95, 0.95, 0.95],
+            baseColor: [0.91, 0.91, 0.91],
             markerColor: [0, 1, 0.8],
-            glowColor: [1, 1, 1],
-            opacity: 0.9,
+            glowColor: [1, 1, 1.04],
+            opacity: 0.85,
             scale: width < 750 ? 0.7 : 1,
             markers: [
                 // longitude latitude
@@ -62,7 +62,7 @@ export default function Globe() {
                 // `state` will be an empty object, return updated params.
                 state.phi = phi;
                 phi += 0.003;
-                stats.update()
+                // stats.update()
             }
         });
         return () => {
