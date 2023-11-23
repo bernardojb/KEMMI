@@ -25,9 +25,9 @@ export default function Globe() {
         let phi = 0;
         globe = createGlobe(canvasRef.current, {
             context: { antialias: true },
-            devicePixelRatio: 0.75,
-            width: 425 * 2,
-            height: 425 * 2,
+            devicePixelRatio: 0.5,
+            width: 300 * 2,
+            height: 300 * 2,
             phi: 0,
             theta: 0.2,
             dark: 0,
