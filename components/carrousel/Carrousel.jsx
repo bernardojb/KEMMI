@@ -107,21 +107,22 @@ const Carrousel = (props) => {
                         
                     </div> */}
                     <div className='fixed h-screen w-screen top-0 left-0 bg-placeholder z-[9999] flex justify-center items-center cursor-pointer' onClick={() => setToggleModal(false)}></div>
-                    <div className='bg-white w-[95vw] lg:w-[60vw] rounded-[28px] z-[99999] relative max-h-[90vh] p-5'>
-                        <div className='bg-text-primary w-fit h-[38px] rounded-full flex items-center px-[22px] absolute right-8 cursor-pointer group hover:bg-gray transition-all duration-200 ease-out' onClick={() => setToggleModal(false)}>
+
+                    <div className='bg-white overflow-y-auto max-w-[956px] w-full rounded-[28px] z-[99999] relative h-full max-h-[90vh] mx-5'>
+
+                        <div className='mx-5 my-5 bg-text-primary w-fit h-[38px] rounded-full flex items-center px-[22px] ml-auto cursor-pointer group hover:bg-gray transition-all duration-200 ease-out' onClick={() => setToggleModal(false)}>
                             <Image src="/assets/icons/general/x.svg" height="24" width="24" alt='Close Icon' className='brightness-[2000%] transition-all duration-200 ease-out group-hover:rotate-[180deg]' />
                         </div>
 
-                        <h1 className='content-primary text-base lg:text-lg mb-8'>Lenvima 10mg</h1>
-                        
-                        <div className='overflow-y-auto max-h-[75vh] p-5 sm:p-10'>
+                        <div className='px-5 pb-5'>
                             <div className='bg-[#e6eaed] h-[300px] mb-6 rounded-[28px] flex justify-center items-center'>
                                 <Image src="/assets/images/medicine-box-01.png" height={300} width={425} alt="" className='rounded-[28px]' />
                             </div>
                             <h1 className='content-primary text-lg lg:text-2xl mb-14'>Lenvima 10mg</h1>
                             <h1 className='content-primary text-base lg:text-lg mb-6'>Descrição</h1>
                             <p className='content-secondary text-base lg:text-lg mb-14'>Lenvima é um inibidor da atividade da tirosina-quinase, responsável pelo crescimento das células cancerígenas. Indicado para o tratamento de um tipo de câncer na tireoide avançado, progressivo ou metastático, que não obteve resposta com outras terapias.</p>
-                            <div className='flex w-full justify-end'>
+
+                            <div className='flex w-full justify-end mt-auto'>
                                 <DefaultButton text="Solicitar cotação" href="/contato" style="btn-black" icon="brightness-[2000%]" />
                             </div>
                         </div>
