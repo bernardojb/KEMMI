@@ -108,8 +108,8 @@ const Carrousel = (props) => {
                     </div> */}
                     <div className='fixed h-screen w-screen top-0 left-0 bg-placeholder z-[9999] flex justify-center items-center cursor-pointer' onClick={() => setToggleModal(false)}></div>
                     <div className='bg-white w-[95vw] lg:w-[60vw] rounded-[28px] z-[99999] relative max-h-[90vh] p-5'>
-                        <div className='bg-text-primary w-fit h-[38px] rounded-full flex items-center px-[22px] absolute right-8 cursor-pointer ' onClick={() => setToggleModal(false)}>
-                            <Image src="/assets/icons/general/x.svg" height="24" width="24" alt='Close Icon' className='brightness-[2000%]' />
+                        <div className='bg-text-primary w-fit h-[38px] rounded-full flex items-center px-[22px] absolute right-8 cursor-pointer group hover:bg-gray transition-all duration-200 ease-out' onClick={() => setToggleModal(false)}>
+                            <Image src="/assets/icons/general/x.svg" height="24" width="24" alt='Close Icon' className='brightness-[2000%] transition-all duration-200 ease-out group-hover:rotate-[180deg]' />
                         </div>
 
                         <h1 className='content-primary text-base lg:text-lg mb-8'>Lenvima 10mg</h1>

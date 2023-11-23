@@ -33,7 +33,7 @@ export default function Globe() {
             baseColor: [0.95, 0.95, 0.95],
             markerColor: [0, 1, 0.8],
             glowColor: [1, 1, 1],
-            opacity: 0.9,
+            // opacity: 1,
             scale: width < 750 ? 0.7 : 1,
             markers: [
                 // longitude latitude

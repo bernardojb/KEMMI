@@ -171,7 +171,7 @@ export default function Header() {
                 <Link key={i.id} href={i.href} className={`ease-in-out transition duration-300 mb-9`} onClick={() => setToggle(false)}>
                   <div className='flex flex-row items-center'>
                     <div className={` ${pathname === i.href ? 'bg-text-primary' : 'bg-white'}  mr-6 py-3 px-[14px] rounded-full h-fit flex justify-center items-center`}>
-                      <p className={`font-monument text-sm  leading-[100%] ${pathname === i.href ? 'text-white' : 'text-navbar-text '} group-hover:text-text-primary pt-[4px]`}>
+                      <p className={`font-monument text-sm leading-[100%] ${pathname === i.href ? 'text-white' : 'text-navbar-text '} group-hover:text-text-primary pt-[4px]`}>
                         {i.number}
                       </p>
                     </div>
