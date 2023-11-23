@@ -56,7 +56,7 @@ export default function Globe() {
 
             ],
             scale: width < 750 ? 0.6 : 1,
-            offset: [width < 750 ? -400 : 500, 0],
+            offset: [width < 750 ? -600 : 500, width < 750 ? -450 : 0],
             onRender: (state) => {
                 // Called on every animation frame.
                 // `state` will be an empty object, return updated params.

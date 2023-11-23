@@ -66,7 +66,7 @@ const Home = () => {
             )}
         </div>
 
-        <section className='pb-44 lg:pb-24 z-10'>
+        <section className='pb-44 lg:pb-24 z-10 mt-[250px] sm:mt-0'>
           <div className='container'>
             <div className='grid grid-cols-16'>
               <Link href="/sobre" className='w-full group col-span-full lg:col-span-8'>
