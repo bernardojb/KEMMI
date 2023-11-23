@@ -32,7 +32,7 @@ export default function Globe() {
             theta: 0.2,
             dark: 0,
             diffuse: 1.5,
-            mapSamples: 9500,
+            mapSamples: 9000,
             mapBrightness: 2,
             baseColor: [0.95, 0.95, 0.95],
             markerColor: [0, 1, 0.8],
