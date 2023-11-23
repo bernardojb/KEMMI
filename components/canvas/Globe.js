@@ -25,14 +25,14 @@ export default function Globe() {
         let phi = 0;
         globe = createGlobe(canvasRef.current, {
             context: { antialias: false },
-            devicePixelRatio: 0.75,
-            width: 950,
-            height: 950,
+            devicePixelRatio: 1,
+            width: 500* 2 ,
+            height: 500* 2 ,
             phi: 0,
             theta: 0.2,
             dark: 0,
             diffuse: 3,
-            mapSamples: 7000,
+            mapSamples: 10000,
             mapBrightness: 2,
             baseColor: [0.95, 0.95, 0.95],
             markerColor: [0, 1, 0.8],
@@ -41,13 +41,13 @@ export default function Globe() {
             scale: width < 750 ? 0.7 : 1,
             markers: [
                 // longitude latitude
-                { location: [40.75, -73.97], size: 0.04 }, //PFIZER NY,
+                // { location: [40.75, -73.97], size: 0.04 }, //PFIZER NY,
                 // { location: [-23.62, -46.70], size: 0.05 }, //PFIZER BRASIL
-                { location: [40.64, -74.64], size: 0.04 }, //KYOWA KIRIN
-                { location: [48.72, -74.37], size: 0.04 }, //BRYSTOL
-                { location: [33.12, -95.23], size: 0.04 }, //ASTRAZENECA
+                // { location: [40.64, -74.64], size: 0.04 }, //KYOWA KIRIN
+                // { location: [48.72, -74.37], size: 0.04 }, //BRYSTOL
+                // { location: [33.12, -95.23], size: 0.04 }, //ASTRAZENECA
                 // { location: [-23.59, -46.86], size: 0.05 }, //ASTRAZENECA BRASIL
-                { location: [43.60, -79.75], size: 0.04 }, //roche
+                // { location: [43.60, -79.75], size: 0.04 }, //roche
                 // { location: [43.60, -79.75], size: 0.05 }, //roche
                 // { location: [45.32, 14.44], size: 0.1 }, //roche
                 // { location: [21.55, 39.16], size: 0.08 }, //roche
