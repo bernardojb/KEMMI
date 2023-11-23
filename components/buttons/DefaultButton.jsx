@@ -7,7 +7,7 @@ const DefaultButton = ({ href, text, style, icon }) => {
         <Link href={href} className='whitespace-nowrap w-fit group'>
             <div className={`pb-[14px] pt-[11px] px-7 rounded-[18px] ${style} w-fit flex flex-row flex-nowrap justify-center items-center`}> 
             {/* group-hover:transition-all ease-out duration-500 group-hover:translate-x-[4px]  */}
-                <h1 className='button-default font-neue-semibold text-base lg:text-lg mr-[10px] pb-[2px]'>
+                <h1 className='button-default font-neue-semibold text-base lg:text-lg mr-[10px] '>
                     {text}
                 </h1>
                 <Image className={`${icon} group-hover:transition-all ease-out duration-500 group-hover:invert pt-[3px]`} src="/assets/icons/general/chevron.svg" width="14" height="14" alt="Chevron Icon"/>
